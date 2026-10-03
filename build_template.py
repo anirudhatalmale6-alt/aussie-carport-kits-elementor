@@ -355,7 +355,8 @@ hero_actions = con([
     hero_button("See What’s Included", "#compare", primary=False),
 ], content_width="full", width=sl(100, "%"), flex_direction="row",
    flex_wrap="wrap", flex_align_items="center", flex_gap=gap(15),
-   flex_direction_mobile="column", margin=dim(32, 0, 0, 0))
+   flex_direction_mobile="column", flex_align_items_mobile="stretch",
+   margin=dim(32, 0, 0, 0))
 
 hero_proof = widget("icon-list",
                     view="inline",
@@ -861,7 +862,10 @@ sticky_cta = con([
    hide_desktop="hidden-desktop", hide_tablet="hidden-tablet")
 
 # ---------------------------------------------------------------- assemble
-content = [topbar, header, hero, trust, choices, steps, proof,
+# The client asked for the announcement bar and the sticky nav header to go, so the
+# hero photo card is the first thing on the page. `topbar` and `header` are still
+# defined above if they are ever wanted back.
+content = [hero, trust, choices, steps, proof,
            compare, outcome, quote, faq, footer, sticky_cta]
 
 # Absolutely-positioned children (the hero logo/value card, the "MOST ONLINE BUYERS"

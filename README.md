@@ -18,19 +18,21 @@ raw .json — unzip it first, Elementor needs the .json itself, not the zip)
 4. In the editor, open the **folder icon** (Add Template) → **My Templates** tab →
    find *Aussie Carport Kits — Conversion Landing Page* → **Insert**.
 5. When Elementor asks **"Import Document Settings?"**, choose **Yes**. That applies the
-   Elementor Canvas page layout, so your theme's header and footer don't appear twice
-   (the design has its own top bar, sticky header and footer built in).
+   Elementor Canvas page layout. If you click **No**, the page keeps your theme's own
+   template, which wraps the design in your theme's container — that can push content
+   sideways and will show your theme's header and footer around it. You can switch it
+   later on the page: **Settings** (gear, bottom-left) → **Page Layout → Elementor Canvas**.
 6. Publish.
 
-If you'd rather keep your theme's header/footer, answer **No** at step 5 and delete the
-first two containers (the dark top bar and the white nav bar) plus the last two
-(the footer and the mobile sticky bar).
+The design no longer carries its own announcement bar or nav header — the hero photo card
+is the first thing on the page. It still has its own footer and a mobile-only sticky CTA
+bar at the very bottom; delete those two containers if your theme already provides them.
 
 ---
 
 ## Requirements
 
-- Elementor **Pro** active (needed for the quote form and the sticky header).
+- Elementor **Pro** active (needed for the quote form).
 - Elementor 3.16 or newer (flexbox containers). Built and tested against Elementor 4.3.3.
 - The page uses the **Inter** Google Font — Elementor loads it automatically.
 
@@ -93,21 +95,19 @@ host blocks WordPress mail, add an SMTP plugin (WP Mail SMTP or similar).
 
 ## Structure
 
-1. Dark announcement top bar
-2. Sticky header — brand, "Call for advice", "Why aluminium?", "Get My Price"
-3. Hero (revised version) — full-bleed photo card with dark gradient overlay, logo mark,
-   green-dot eyebrow, "Your Space. Your Size. One Complete Kit.", sub copy, two CTAs,
-   proof row, and the glass value card bottom-right
-4. Trust strip — 4 items
-5. "Do it yourself — or have us organise the installation" — 2 choice cards
-6. "Here's what happens after you enquire" — 4 numbered steps
-7. "Built to look premium" — image + 4 metric boxes
-8. Dark comparison table — aluminium vs roll-formed steel (anchor `#compare`)
-9. "Make the finished carport the hero" — copy + image
-10. Quote section (anchor `#quote`) — benefits + form card
-11. FAQ accordion
-12. Footer
-13. Mobile-only sticky CTA bar (hidden on desktop and tablet)
+1. Hero — full-bleed photo card with dark gradient overlay, logo mark, green-dot eyebrow,
+   "Your Space. Your Size. One Complete Kit.", sub copy, two CTAs, proof row, and the
+   glass value card bottom-right
+2. Trust strip — 4 items
+3. "Do it yourself — or have us organise the installation" — 2 choice cards
+4. "Here's what happens after you enquire" — 4 numbered steps
+5. "Built to look premium" — image + 4 metric boxes
+6. Dark comparison table — aluminium vs roll-formed steel (anchor `#compare`)
+7. "Make the finished carport the hero" — copy + image
+8. Quote section (anchor `#quote`) — benefits + form card
+9. FAQ accordion
+10. Footer
+11. Mobile-only sticky CTA bar (hidden on desktop and tablet)
 
 Every top-level container is set to **Overflow: Hidden**, so an absolutely-positioned
 element (the hero logo mark, the value card, the "MOST ONLINE BUYERS" tag) can't push
