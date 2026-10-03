@@ -36,16 +36,22 @@ first two containers (the dark top bar and the white nav bar) plus the last two
 
 ## Images
 
-Placeholders are included so you can see the sizes. Replace each one with your own
-photo at the same dimensions and the layout won't move.
+The two lower-section images are grey placeholders with the size printed on them —
+replace each with your own photo at the same dimensions and the layout won't move.
 
 | Where | File | Size |
 |---|---|---|
-| Hero (right of the headline) | `images/hero-carport-1200x900.jpg` | **1200 × 900 px** (4:3) |
+| Hero background (full-bleed) | `images/hero-background-1284x1109.jpg` | your own photo — **1600 × 1100 px or larger** |
+| Hero logo mark (top-left of the card) | `images/aussie-carport-kits-logo.png` | your logo, transparent PNG, shown 138 px wide |
 | "Built to look premium" section | `images/product-detail-1160x1080.jpg` | **1160 × 1080 px** |
 | "Make the finished carport the hero" | `images/project-outcome-1160x1080.jpg` | **1160 × 1080 px** |
 
-During import Elementor downloads these three placeholders into your Media Library
+The hero background photo and the logo are your own assets, taken straight out of the
+revised hero HTML you supplied — they are not placeholders. The logo PNG you supplied
+had a large transparent margin around it; that margin is trimmed here so the mark reads
+properly at the 34 px height the design specifies.
+
+During import Elementor downloads all four images into your Media Library
 automatically. If your server blocks remote fetches they'll show as broken — in that
 case upload the files from the `images/` folder here and re-select them on each
 Image widget.
@@ -72,7 +78,12 @@ host blocks WordPress mail, add an SMTP plugin (WP Mail SMTP or similar).
 ## Things to change before publishing
 
 - **Phone number** — `tel:+61000000000` is a placeholder. It's on "Call for advice"
-  (header), "Speak To A Carport Expert" (hero) and "Call Us" (mobile sticky bar).
+  (header) and "Call Us" (mobile sticky bar).
+- **The note block under the hero** — "Why this replaces the promotion section better"
+  is commentary from your design file, reproduced as asked. It's one container; right-click
+  it in Elementor and Delete when you want it gone.
+- **Duplicate logo** — the revised hero has your logo inside the photo card, and the
+  sticky header above it has the wordmark too. Say the word and I'll drop either one.
 - **Body copy** — the HTML reference contains notes written to you rather than final
   page copy (for example "Your original page has strong product ingredients…"). Those
   have been reproduced exactly as supplied; swap them for your real copy.
@@ -85,7 +96,10 @@ host blocks WordPress mail, add an SMTP plugin (WP Mail SMTP or similar).
 
 1. Dark announcement top bar
 2. Sticky header — brand, "Call for advice", "Why aluminium?", "Get My Price"
-3. Hero — eyebrow pill, headline, lead, 3 price pills, 2 CTAs, image + floating price card
+3. Hero (revised version) — full-bleed photo card with dark gradient overlay, logo mark,
+   green-dot eyebrow, "Your Space. Your Size. One Complete Kit.", sub copy, two CTAs,
+   proof row, and the glass value card bottom-right; followed by the "Why this replaces
+   the promotion section better" note block
 4. Trust strip — 4 items
 5. "Do it yourself — or have us organise the installation" — 2 choice cards
 6. "Here's what happens after you enquire" — 4 numbered steps

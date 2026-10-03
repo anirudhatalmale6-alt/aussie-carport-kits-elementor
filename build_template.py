@@ -74,6 +74,9 @@ def shadow(group, h, v, blur, spread, color):
 
 def con(children=None, **settings):
     settings.setdefault("content_width", "full")
+    # Elementor's kit gives every container 10px padding by default, which the
+    # reference HTML doesn't have. Zero it unless the design calls for padding.
+    settings.setdefault("padding", dim(0, 0, 0, 0))
     # Elementor deliberately does NOT inherit the desktop container width down to
     # mobile, so mirror it explicitly unless a breakpoint value was given.
     if "width" in settings:
@@ -142,7 +145,8 @@ def heading(title, tag="h2", color=INK, align=None, link=None, **ty):
     return widget("heading", **s)
 
 def text(html, color=None, align=None, **ty):
-    s = {"editor": html}
+    # WordPress/theme CSS puts a bottom margin on <p>; the reference design doesn't.
+    s = {"editor": html.replace("<p>", '<p style="margin:0">')}
     if color: s["text_color"] = color
     if align: s["align"] = align
     s.update(typo(**ty))
@@ -271,73 +275,205 @@ header["elements"][1]["elements"][0]["settings"].update(
 header["elements"][1]["elements"][1]["settings"].update(
     {"hide_mobile": "hidden-mobile"})
 
-# ---------------------------------------------------------------- 3. hero
-eyebrow = con([heading("Sydney DIY Carport Kits + Installation", tag="div",
-                       color="#277318", size=12, weight=800,
-                       transform="uppercase", ls=0.7, lh=1.2)],
-              content_width="full", _flex_align_self="flex-start",
-              width=cu("fit-content"),
-              background_background="classic", background_color="#EAF8E7",
-              border_border="solid", border_width=dim(1, 1, 1, 1),
-              border_color="#D2EFCB", border_radius=rad(999),
-              padding=dim(7, 11, 7, 11), flex_gap=gap(0))
+# ---------------------------------------------------------------- 3. hero (revised)
+HERO_BG   = "hero-background-1284x1109.jpg"
+HERO_LOGO = "aussie-carport-kits-logo.png"
 
-price_card = con([
-    text("<p>Premium single carport kit</p>", color="#61706C", size=13, weight=600, lh=1.3),
-    heading("From $2,290", tag="div", color=INK, size=28, weight=800, lh=1.15),
-    text("<p>DIY kit &middot; Installation optional</p>", color="#2B9120",
-         size=12, weight=700, lh=1.3),
-], content_width="full",
-   position="absolute", _offset_orientation_h="start", _offset_x=sl(-28),
-   _offset_x_tablet=sl(14), _offset_x_mobile=sl(0),
-   _offset_orientation_v="end", _offset_y_end=sl(26),
-   _offset_y_end_tablet=sl(14), _offset_y_end_mobile=sl(14),
-   width=sl(235), flex_gap=gap(2),
-   background_background="classic", background_color=WHITE,
-   border_border="solid", border_width=dim(1, 1, 1, 1), border_color="#E4EBE6",
-   border_radius=rad(14), padding=dim(15, 18, 15, 18),
-   **shadow("box_shadow", 0, 15, 35, 0, "rgba(20,32,44,0.15)"))
+# green dot with its soft ring
+eyebrow_dot = con([], content_width="full", width=sl(9), min_height=sl(9),
+                  _flex_size="none", flex_gap=gap(0),
+                  background_background="classic", background_color="#60C62F",
+                  border_radius=rad(50),
+                  **shadow("box_shadow", 0, 0, 0, 6, "rgba(96,198,47,0.16)"))
 
-hero = section([
-    row([
-        col([
-            eyebrow,
-            heading('Get the right carport kit '
-                    '<span style="color:#3ABB1D">without the guesswork.</span>',
-                    tag="h1", color=INK, size="clamp(42px, 5.2vw, 72px)",
-                    size_m=45, weight=800, lh=0.99, ls=-3.2, ls_m=-2.2),
-            text("<p>Premium engineered aluminium carport kits sized for your project, "
-                 "delivered to you and backed by people who actually know patios and "
-                 "carports. Want it installed? Licensed builders are available too.</p>",
-                 color=LEAD, size=20, size_m=17, lh=1.5),
-            con([pill("Single kits from <b>$2,290</b>"),
-                 pill("Installation from <b>$140/m&sup2;</b>"),
-                 pill("<b>7-day Sydney delivery</b>")],
-                content_width="full", flex_direction="row", flex_wrap="wrap",
-                flex_gap=gap(12), width=sl(100, "%")),
-            con([button("Get My Exact Carport Price →", "#quote", variant="primary",
-                        full_mobile=True),
-                 button("Speak To A Carport Expert", "tel:+61000000000",
-                        variant="outline", full_mobile=True)],
-                content_width="full", flex_direction="row", flex_wrap="wrap",
-                flex_gap=gap(12), width=sl(100, "%"),
-                flex_direction_mobile="column"),
-            text("<p>No obligation &middot; Tell us your size + postcode &middot; "
-                 "We&rsquo;ll help confirm the right kit before you order</p>",
-                 color="#65737F", size=12, lh=1.5),
-        ], width=52, gap_v=22),
-        col([
-            image("hero-carport-1200x900.jpg", radius=20,
-                  shadow_cfg=(0, 24, 65, 0, "rgba(20,32,44,0.18)")),
-            price_card,
-        ], width=44, gap_v=0),
-    ], gap_v=52, align="center"),
-], pad_top=54, pad_bottom=28, gap_v=0,
-   background_background="gradient", background_color="#F8FBF8",
-   background_color_b=WHITE, background_gradient_type="linear",
-   background_gradient_angle=sl(180, "deg"),
-   background_color_stop=sl(0, "%"), background_color_b_stop=sl(76, "%"),
-   padding_tablet=dim(34, PAD_X, 28, PAD_X))
+hero_eyebrow = con([
+    eyebrow_dot,
+    heading("Custom DIY Carport Kits", tag="div", color="#D7F2CC",
+            size=13, weight=800, transform="uppercase", ls=1.7, lh=1.2),
+], content_width="full", width=cu("fit-content"), flex_direction="row",
+   flex_align_items="center", flex_gap=gap(9), flex_wrap="nowrap",
+   margin=dim(0, 0, 20, 0))
+
+hero_h1 = heading('Your Space.<br>Your Size.<br>'
+                  '<span style="color:#60C62F">One Complete Kit.</span>',
+                  tag="h1", color=WHITE, size="clamp(46px, 6.2vw, 82px)",
+                  size_m=44, weight=900, lh=0.98)
+hero_h1["settings"]["typography_letter_spacing"] = cu("-0.055em")
+hero_h1["settings"]["typography_line_height_mobile"] = sl(1.02, "em")
+hero_h1["settings"].update(
+    {"text_shadow_text_shadow_type": "yes",
+     "text_shadow_text_shadow": {"horizontal": 0, "vertical": 12, "blur": 34,
+                                 "color": "rgba(0,0,0,0.28)"}})
+
+hero_sub = text("<p>Send us your measurements or plans and we&rsquo;ll configure a "
+                "<strong style=\"color:#ffffff\">complete engineered aluminium carport "
+                "kit</strong> to suit your home &mdash; ready for fast delivery to "
+                "eligible Sydney areas.</p>",
+                color="#E3E9ED", size=20, size_m=17, lh=1.55)
+hero_sub["settings"].update(
+    {"text_shadow_text_shadow_type": "yes",
+     "text_shadow_text_shadow": {"horizontal": 0, "vertical": 8, "blur": 22,
+                                 "color": "rgba(0,0,0,0.24)"}})
+
+hero_sub_wrap = con([hero_sub], content_width="full", width=cu("min(680px, 100%)"),
+                    flex_gap=gap(0), margin=dim(24, 0, 0, 0))
+
+def hero_button(label, link, primary=True):
+    s = {"text": label, "size": "sm",
+         "link": {"url": link, "is_external": "", "nofollow": "", "custom_attributes": ""},
+         "border_radius": rad(14),
+         "text_padding": dim(22, 28, 22, 28) if primary else dim(22, 22, 22, 22),
+         "align": "left", "align_mobile": "justify"}
+    if primary:
+        s.update(typo(size=15, weight=900, lh=1.1, ls=0.5, transform="uppercase"))
+        s.update({"background_background": "gradient",
+                  "background_color": "#6BD839", "background_color_stop": sl(0, "%"),
+                  "background_color_b": "#55BA2D", "background_color_b_stop": sl(100, "%"),
+                  "background_gradient_type": "linear",
+                  "background_gradient_angle": sl(180, "deg"),
+                  "button_text_color": "#10200B",
+                  "button_background_hover_background": "classic",
+                  "button_background_hover_color": "#55BA2D",
+                  "hover_color": "#10200B"})
+        s.update(shadow("button_box_shadow", 0, 16, 34, 0, "rgba(96,198,47,0.28)"))
+    else:
+        s.update(typo(size=15, weight=800, lh=1.1))
+        s.update({"background_background": "classic",
+                  "background_color": "rgba(255,255,255,0.09)",
+                  "button_text_color": WHITE,
+                  "border_border": "solid", "border_width": dim(1, 1, 1, 1),
+                  "border_color": "rgba(255,255,255,0.18)",
+                  "button_background_hover_background": "classic",
+                  "button_background_hover_color": "rgba(255,255,255,0.18)",
+                  "hover_color": WHITE,
+                  "button_hover_border_color": "rgba(255,255,255,0.28)",
+                  "custom_css": "selector .elementor-button{backdrop-filter:blur(8px);}"})
+    return widget("button", **s)
+
+hero_actions = con([
+    hero_button("Get My Custom Kit Price →", "#quote", primary=True),
+    hero_button("See What’s Included", "#compare", primary=False),
+], content_width="full", width=sl(100, "%"), flex_direction="row",
+   flex_wrap="wrap", flex_align_items="center", flex_gap=gap(15),
+   flex_direction_mobile="column", margin=dim(32, 0, 0, 0))
+
+hero_proof = widget("icon-list",
+                    view="inline",
+                    icon_list=[{"text": t,
+                                "selected_icon": {"value": "fas fa-check",
+                                                  "library": "fa-solid"},
+                                "_id": eid()}
+                               for t in ["Free quote", "No obligation",
+                                         "Custom sizes", "Engineer-certified"]],
+                    space_between=gapxy(20, 12),
+                    icon_color="#60C62F",
+                    icon_size=sl(13),
+                    text_indent=sl(7),
+                    text_color="#D4DDE2",
+                    **typo(prefix="icon_typography", size=13, weight=700, lh=1.4))
+hero_proof["settings"]["_margin"] = dim(18, 0, 0, 0)
+
+hero_content = con([hero_eyebrow, hero_h1, hero_sub_wrap, hero_actions, hero_proof],
+                   content_width="full", width=cu("min(760px, 100%)"),
+                   width_tablet=sl(100, "%"), width_mobile=sl(100, "%"),
+                   min_height=sl(650), min_height_tablet=sl(700),
+                   flex_direction="column", flex_justify_content="center",
+                   flex_align_items="flex-start", flex_gap=gap(0),
+                   padding=dim(104, 58, 58, 58),
+                   padding_tablet=dim(100, 28, 200, 28),
+                   padding_mobile=dim(88, 20, 220, 20),
+                   z_index=2)
+
+hero_mark = con([
+    widget("image",
+           image={"url": f"{IMG_BASE}/{HERO_LOGO}", "id": "", "alt": "Aussie Carport Kits",
+                  "source": "library"},
+           image_size="full",
+           width=sl(138), width_mobile=sl(118)),
+], content_width="full", width=cu("fit-content"), flex_gap=gap(0), z_index=3,
+   position="absolute", _offset_orientation_h="start",
+   _offset_x=sl(34), _offset_x_tablet=sl(28), _offset_x_mobile=sl(20),
+   _offset_orientation_v="start",
+   _offset_y=sl(28), _offset_y_mobile=sl(22))
+
+hero_value_card = con([
+    heading("Built around your property", tag="div", color="#CCEFC0",
+            size=11, weight=800, transform="uppercase", ls=1.3, lh=1.3),
+    heading("No generic one-size-fits-all package.", tag="div", color=WHITE,
+            size=19, weight=700, lh=1.3),
+    text("<p>We help match the structure, sizing and components to your actual space, "
+         "so you know what you&rsquo;re ordering before it arrives.</p>",
+         color="#D7DFE4", size=13, lh=1.5),
+], content_width="full", z_index=3,
+   width=cu("min(370px, calc(100% - 68px))"),
+   width_tablet=cu("calc(100% - 56px)"), width_mobile=cu("calc(100% - 40px)"),
+   position="absolute",
+   _offset_orientation_h="end",
+   _offset_x_end=sl(34), _offset_x_end_tablet=sl(28), _offset_x_end_mobile=sl(20),
+   _offset_orientation_v="end",
+   _offset_y_end=sl(34), _offset_y_end_tablet=sl(28), _offset_y_end_mobile=sl(20),
+   flex_gap=gap(7), padding=dim(22, 22, 22, 22),
+   background_background="classic", background_color="rgba(9,15,19,0.64)",
+   border_border="solid", border_width=dim(1, 1, 1, 1),
+   border_color="rgba(255,255,255,0.12)", border_radius=rad(18),
+   custom_css="selector{backdrop-filter:blur(10px);}",
+   **shadow("box_shadow", 0, 18, 46, 0, "rgba(0,0,0,0.24)"))
+
+# second darkening pass (the vertical gradient in the reference), kept below the copy
+hero_veil = con([], content_width="full", z_index=1,
+                position="absolute", _offset_orientation_h="start", _offset_x=sl(0),
+                _offset_orientation_v="start", _offset_y=sl(0),
+                width=sl(100, "%"), min_height=sl(100, "%"), flex_gap=gap(0),
+                background_background="gradient",
+                background_color="rgba(0,0,0,0.1)", background_color_stop=sl(0, "%"),
+                background_color_b="rgba(0,0,0,0.28)", background_color_b_stop=sl(100, "%"),
+                background_gradient_type="linear",
+                background_gradient_angle=sl(180, "deg"))
+
+hero_card = con([hero_veil, hero_mark, hero_content, hero_value_card],
+                content_width="full",
+                width=cu("min(1220px, 100%)"),
+                min_height=sl(650), min_height_tablet=sl(700),
+                flex_direction="column", flex_gap=gap(0),
+                overflow="hidden",
+                border_radius=rad(28), border_radius_mobile=rad(20),
+                background_background="classic",
+                background_image={"url": f"{IMG_BASE}/{HERO_BG}", "id": "",
+                                  "source": "library"},
+                background_size="cover",
+                background_repeat="no-repeat",
+                background_position="initial",
+                background_xpos=sl(50, "%"), background_ypos=sl(48, "%"),
+                background_xpos_mobile=sl(62, "%"), background_ypos_mobile=sl(50, "%"),
+                background_overlay_background="gradient",
+                background_overlay_color="rgba(7,13,17,0.82)",
+                background_overlay_color_stop=sl(38, "%"),
+                background_overlay_color_b="rgba(7,13,17,0.22)",
+                background_overlay_color_b_stop=sl(100, "%"),
+                background_overlay_gradient_type="linear",
+                background_overlay_gradient_angle=sl(90, "deg"),
+                background_overlay_opacity=sl(1),
+                **shadow("box_shadow", 0, 28, 80, 0, "rgba(17,28,34,0.20)"))
+
+hero_notes = con([
+    heading("Why this replaces the promotion section better", tag="h2",
+            color="#243038", size=26, weight=800, lh=1.25, ls=-0.78),
+    con([text("<p>The old block had only one reason to act: a temporary discount. This "
+              "version gives the section a permanent conversion job &mdash; reduce "
+              "uncertainty, explain the custom-fit offer, and move serious buyers into a "
+              "quote without relying on an expiry date.</p>",
+              color="#5D6870", size=16, lh=1.6)],
+        content_width="full", width=cu("min(980px, 100%)"), flex_gap=gap(0)),
+], content_width="full", width=cu("min(1220px, 100%)"), flex_gap=gap(10),
+   margin=dim(22, 0, 0, 0), padding=dim(22, 4, 0, 4))
+
+hero = con([hero_card, hero_notes],
+           content_width="full", width=sl(100, "%"),
+           flex_direction="column", flex_align_items="center", flex_gap=gap(0),
+           padding=dim(48, 18, 48, 18),
+           padding_mobile=dim(18, 10, 18, 10),
+           background_background="classic", background_color="#EEF2EF")
+
 
 # ---------------------------------------------------------------- 4. trust strip
 def trust_item(glyph, label):
