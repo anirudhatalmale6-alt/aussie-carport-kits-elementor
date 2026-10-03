@@ -45,7 +45,7 @@ replace each with your own photo at the same dimensions and the layout won't mov
 
 | Where | File | Size |
 |---|---|---|
-| Hero background (full-bleed) | `images/hero-background-1284x1109.jpg` | your own photo — **1600 × 1100 px or larger** |
+| Hero background (full-bleed) | `images/hero-background-1284x1109.jpg` | your own photo — **1920 × 1100 px or larger**, since it now spans the full screen width |
 | Hero logo mark (top-left of the card) | `images/aussie-carport-kits-logo.png` | your logo, transparent PNG, shown 138 px wide |
 | "Built to look premium" section | `images/product-detail-1160x1080.jpg` | **1160 × 1080 px** |
 | "Make the finished carport the hero" | `images/project-outcome-1160x1080.jpg` | **1160 × 1080 px** |
@@ -81,10 +81,8 @@ host blocks WordPress mail, add an SMTP plugin (WP Mail SMTP or similar).
 
 ## Things to change before publishing
 
-- **Phone number** — `tel:+61000000000` is a placeholder. It's on "Call for advice"
-  (header) and "Call Us" (mobile sticky bar).
-- **Duplicate logo** — the revised hero has your logo inside the photo card, and the
-  sticky header above it has the wordmark too. Say the word and I'll drop either one.
+- **Phone number** — `tel:+61000000000` is a placeholder, on the "Call Us" button in the
+  mobile sticky bar.
 - **Body copy** — the HTML reference contains notes written to you rather than final
   page copy (for example "Your original page has strong product ingredients…"). Those
   have been reproduced exactly as supplied; swap them for your real copy.
@@ -95,9 +93,11 @@ host blocks WordPress mail, add an SMTP plugin (WP Mail SMTP or similar).
 
 ## Structure
 
-1. Hero — full-bleed photo card with dark gradient overlay, logo mark, green-dot eyebrow,
-   "Your Space. Your Size. One Complete Kit.", sub copy, two CTAs, proof row, and the
-   glass value card bottom-right
+1. Hero — true full-bleed photo (edge to edge, no rounded card, no outer frame) with the
+   dark gradient overlay, logo mark, green-dot eyebrow, "Your Space. Your Size. One
+   Complete Kit.", sub copy, two CTAs, proof row, and the glass value card bottom-right.
+   The photo spans the full viewport; the content inside it stays boxed at 1220px and
+   centred so the composition keeps the reference proportions on wide screens.
 2. Trust strip — 4 items
 3. "Do it yourself — or have us organise the installation" — 2 choice cards
 4. "Here's what happens after you enquire" — 4 numbered steps

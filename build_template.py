@@ -431,37 +431,35 @@ hero_veil = con([], content_width="full", z_index=1,
                 background_gradient_type="linear",
                 background_gradient_angle=sl(180, "deg"))
 
-hero_card = con([hero_veil, hero_mark, hero_content, hero_value_card],
-                content_width="full",
-                width=cu("min(1220px, 100%)"),
-                min_height=sl(650), min_height_tablet=sl(700),
-                flex_direction="column", flex_gap=gap(0),
-                overflow="hidden",
-                border_radius=rad(28), border_radius_mobile=rad(20),
-                background_background="classic",
-                background_image={"url": f"{IMG_BASE}/{HERO_BG}", "id": "",
-                                  "source": "library"},
-                background_size="cover",
-                background_repeat="no-repeat",
-                background_position="initial",
-                background_xpos=sl(50, "%"), background_ypos=sl(48, "%"),
-                background_xpos_mobile=sl(62, "%"), background_ypos_mobile=sl(50, "%"),
-                background_overlay_background="gradient",
-                background_overlay_color="rgba(7,13,17,0.82)",
-                background_overlay_color_stop=sl(38, "%"),
-                background_overlay_color_b="rgba(7,13,17,0.22)",
-                background_overlay_color_b_stop=sl(100, "%"),
-                background_overlay_gradient_type="linear",
-                background_overlay_gradient_angle=sl(90, "deg"),
-                background_overlay_opacity=sl(1),
-                **shadow("box_shadow", 0, 28, 80, 0, "rgba(17,28,34,0.20)"))
+# The photo bleeds edge to edge; the composition inside it (logo mark, copy block and
+# value card) stays boxed at the design's 1220px and centred, so the layout keeps the
+# same proportions as the reference instead of hugging the viewport edges.
+hero_stage = con([hero_mark, hero_content, hero_value_card],
+                 content_width="full", width=cu("min(1220px, 100%)"),
+                 min_height=sl(650), min_height_tablet=sl(700),
+                 flex_direction="column", flex_gap=gap(0))
 
-hero = con([hero_card],
+hero = con([hero_veil, hero_stage],
            content_width="full", width=sl(100, "%"),
+           min_height=sl(650), min_height_tablet=sl(700),
            flex_direction="column", flex_align_items="center", flex_gap=gap(0),
-           padding=dim(48, 18, 48, 18),
-           padding_mobile=dim(18, 10, 18, 10),
-           background_background="classic", background_color="#EEF2EF")
+           overflow="hidden",
+           background_background="classic",
+           background_image={"url": f"{IMG_BASE}/{HERO_BG}", "id": "",
+                             "source": "library"},
+           background_size="cover",
+           background_repeat="no-repeat",
+           background_position="initial",
+           background_xpos=sl(50, "%"), background_ypos=sl(48, "%"),
+           background_xpos_mobile=sl(62, "%"), background_ypos_mobile=sl(50, "%"),
+           background_overlay_background="gradient",
+           background_overlay_color="rgba(7,13,17,0.82)",
+           background_overlay_color_stop=sl(38, "%"),
+           background_overlay_color_b="rgba(7,13,17,0.22)",
+           background_overlay_color_b_stop=sl(100, "%"),
+           background_overlay_gradient_type="linear",
+           background_overlay_gradient_angle=sl(90, "deg"),
+           background_overlay_opacity=sl(1))
 
 
 # ---------------------------------------------------------------- 4. trust strip
