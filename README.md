@@ -5,6 +5,8 @@ section for section, built with Elementor flexbox containers and core widgets
 (plus the Elementor **Pro** Form widget for the quote form).
 
 **File to import:** `aussie-carport-kits-landing-template.json`
+(also provided as `aussie-carport-kits-template.zip` if your browser won't download the
+raw .json — unzip it first, Elementor needs the .json itself, not the zip)
 
 ---
 
@@ -79,9 +81,6 @@ host blocks WordPress mail, add an SMTP plugin (WP Mail SMTP or similar).
 
 - **Phone number** — `tel:+61000000000` is a placeholder. It's on "Call for advice"
   (header) and "Call Us" (mobile sticky bar).
-- **The note block under the hero** — "Why this replaces the promotion section better"
-  is commentary from your design file, reproduced as asked. It's one container; right-click
-  it in Elementor and Delete when you want it gone.
 - **Duplicate logo** — the revised hero has your logo inside the photo card, and the
   sticky header above it has the wordmark too. Say the word and I'll drop either one.
 - **Body copy** — the HTML reference contains notes written to you rather than final
@@ -98,8 +97,7 @@ host blocks WordPress mail, add an SMTP plugin (WP Mail SMTP or similar).
 2. Sticky header — brand, "Call for advice", "Why aluminium?", "Get My Price"
 3. Hero (revised version) — full-bleed photo card with dark gradient overlay, logo mark,
    green-dot eyebrow, "Your Space. Your Size. One Complete Kit.", sub copy, two CTAs,
-   proof row, and the glass value card bottom-right; followed by the "Why this replaces
-   the promotion section better" note block
+   proof row, and the glass value card bottom-right
 4. Trust strip — 4 items
 5. "Do it yourself — or have us organise the installation" — 2 choice cards
 6. "Here's what happens after you enquire" — 4 numbered steps
@@ -110,6 +108,10 @@ host blocks WordPress mail, add an SMTP plugin (WP Mail SMTP or similar).
 11. FAQ accordion
 12. Footer
 13. Mobile-only sticky CTA bar (hidden on desktop and tablet)
+
+Every top-level container is set to **Overflow: Hidden**, so an absolutely-positioned
+element (the hero logo mark, the value card, the "MOST ONLINE BUYERS" tag) can't push
+past its section and give the page a horizontal scrollbar on a live theme.
 
 Breakpoints follow Elementor defaults — tablet ≤ 1024px, mobile ≤ 767px — mapped from
 the 900px / 620px media queries in the reference HTML.

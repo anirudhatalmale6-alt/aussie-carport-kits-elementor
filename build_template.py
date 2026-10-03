@@ -455,19 +455,7 @@ hero_card = con([hero_veil, hero_mark, hero_content, hero_value_card],
                 background_overlay_opacity=sl(1),
                 **shadow("box_shadow", 0, 28, 80, 0, "rgba(17,28,34,0.20)"))
 
-hero_notes = con([
-    heading("Why this replaces the promotion section better", tag="h2",
-            color="#243038", size=26, weight=800, lh=1.25, ls=-0.78),
-    con([text("<p>The old block had only one reason to act: a temporary discount. This "
-              "version gives the section a permanent conversion job &mdash; reduce "
-              "uncertainty, explain the custom-fit offer, and move serious buyers into a "
-              "quote without relying on an expiry date.</p>",
-              color="#5D6870", size=16, lh=1.6)],
-        content_width="full", width=cu("min(980px, 100%)"), flex_gap=gap(0)),
-], content_width="full", width=cu("min(1220px, 100%)"), flex_gap=gap(10),
-   margin=dim(22, 0, 0, 0), padding=dim(22, 4, 0, 4))
-
-hero = con([hero_card, hero_notes],
+hero = con([hero_card],
            content_width="full", width=sl(100, "%"),
            flex_direction="column", flex_align_items="center", flex_gap=gap(0),
            padding=dim(48, 18, 48, 18),
@@ -875,6 +863,12 @@ sticky_cta = con([
 # ---------------------------------------------------------------- assemble
 content = [topbar, header, hero, trust, choices, steps, proof,
            compare, outcome, quote, faq, footer, sticky_cta]
+
+# Absolutely-positioned children (the hero logo/value card, the "MOST ONLINE BUYERS"
+# tag) can push past their section on a live theme and give the page a horizontal
+# scrollbar. Clip at the top level so that can't happen on any theme.
+for _top in content:
+    _top["settings"].setdefault("overflow", "hidden")
 
 template = {
     "version": "0.4",
