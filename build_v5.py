@@ -550,27 +550,106 @@ def ba_media(fname, label, after=False):
                background_background="classic", background_color="#E7EDF2",
                min_height=sl(450), min_height_tablet=sl(370), min_height_mobile=sl(225))
 
-def ba_slide(title, before, after):
-    """Locked inner container (the shape nested-carousel exports). The slide itself is
-    the 2-up grid, so there is no extra pair wrapper."""
-    label = heading(title, color=NAVY, size=15, size_m=13, weight=900, lh=1.3,
-                    ls="-0.025em", family=HEAD_F)
-    adv(label, mt=4, _grid_column="custom", _grid_column_custom="1 / -1")
-    s = grid([ba_media(before, "Before"), ba_media(after, "After", after=True), label],
-             cols="minmax(0, 1fr) minmax(0, 1fr)", cols_m="minmax(0, 1fr)",
-             g=(12, 12), g_m=(8, 8),
-             padding=dim(15, 15, 15, 15), padding_mobile=dim(9, 9, 9, 9))
+# His controls bar: project name + "n / 4" on the left, dots and two square arrows on
+# the right, under a hairline. The name/counter row lives in each slide (so it changes
+# with the slide, no script); the carousel's own arrows and dots are placed over the
+# right end of that row through the widget's Navigation / Pagination settings.
+ARROW, ARROW_M = 42, 39            # button size
+CTL_PAD, CTL_PAD_M = 17, 12        # bar side padding (his .pe-ba-controls)
+CTL_H, CTL_H_M = 73, 63            # 15 + 42 + 16  /  12 + 39 + 12
+
+def ba_slide(n, title, before, after):
+    """Locked inner container (the shape nested-carousel exports): the 2-up pair, then
+    the bar with the project name and counter."""
+    pair = grid([ba_media(before, "Before"), ba_media(after, "After", after=True)],
+                cols="minmax(0, 1fr) minmax(0, 1fr)", cols_m="minmax(0, 1fr)",
+                g=(12, 12), g_m=(8, 8),
+                padding=dim(15, 15, 15, 15), padding_mobile=dim(9, 9, 9, 9))
+    bar = con([adv(heading(title, color=NAVY, size=15, size_m=13, weight=900, lh=1.3,
+                           ls="-0.025em", family=HEAD_F), auto=True),
+               adv(heading(f"{n} / {len(PROJECTS)}", color="#778598", size=12, size_m=11,
+                           weight=800, lh=1.3), _flex_size="none")],
+              flex_direction="row", flex_wrap="nowrap", flex_align_items="center",
+              flex_gap=gap(11), flex_gap_mobile=gap(7),
+              min_height=sl(CTL_H), min_height_mobile=sl(CTL_H_M),
+              # right padding keeps the text clear of the dots + arrows
+              padding=dim(8, 2 * ARROW + 8 + CTL_PAD + 18 + 73 + 18, 8, CTL_PAD),
+              padding_mobile=dim(6, 2 * ARROW_M + 8 + CTL_PAD_M + 10, 6, CTL_PAD_M),
+              border_border="solid", border_width=dim(1, 0, 0, 0), border_color=LINE)
+    s = con([pair, bar], flex_direction="column")
     s["isInner"] = True
     s["isLocked"] = True
     s["settings"]["_title"] = title
+    return s
+
+def ba_nav():
+    """Arrows: 42px squares, 9px radius, bottom-right of the shell, 8px apart.
+    Dots: 9px, left of the arrows, hidden on mobile (as in his file)."""
+    pos = lambda v: sl(v)
+    prev_x = -(CTL_PAD + ARROW + 8)              # prev sits one button + gap left of next
+    prev_x_m = -(CTL_PAD_M + ARROW_M + 8)
+    # vertical: 'end' puts the button's bottom at 100% + offset - 15px (Pro's caption
+    # spacing), so offset = 15 - bottom padding
+    s = {
+        "arrows": "yes", "arrows_position": "inside",
+        "navigation_previous_icon": {"value": "fas fa-arrow-left", "library": "fa-solid"},
+        "navigation_next_icon": {"value": "fas fa-arrow-right", "library": "fa-solid"},
+        "navigation_previous_icon_horizontal_orientation": "end",
+        "navigation_previous_icon_horizontal_position": pos(prev_x),
+        "navigation_previous_icon_horizontal_position_mobile": pos(prev_x_m),
+        "navigation_previous_icon_vertical_orientation": "end",
+        "navigation_previous_icon_vertical_position": pos(15 - 16),
+        "navigation_previous_icon_vertical_position_mobile": pos(15 - CTL_PAD_M),
+        "navigation_next_icon_horizontal_orientation": "end",
+        "navigation_next_icon_horizontal_position": pos(CTL_PAD),
+        "navigation_next_icon_horizontal_position_mobile": pos(CTL_PAD_M),
+        "navigation_next_icon_vertical_orientation": "end",
+        "navigation_next_icon_vertical_position": pos(15 - 16),
+        "navigation_next_icon_vertical_position_mobile": pos(15 - CTL_PAD_M),
+        "arrows_size": sl(16), "arrows_size_mobile": sl(15),
+        "arrows_padding": dim(12, 12, 12, 12),
+        "arrows_padding_mobile": dim(11, 11, 11, 11),
+        "arrows_border_radius": rad(9),
+        "arrow_normal_color": NAVY, "arrow_hover_color": NAVY,
+        "arrows_normal_background_background": "classic",
+        "arrows_normal_background_color": WHITE,
+        "arrows_normal_border_type_border": "solid",
+        "arrows_normal_border_type_width": dim(1, 1, 1, 1),
+        "arrows_normal_border_type_color": "#D6E1E9",
+        "arrows_hover_background_background": "classic",
+        "arrows_hover_background_color": "#EDF9FE",
+        "arrows_hover_border_type_border": "solid",
+        "arrows_hover_border_type_width": dim(1, 1, 1, 1),
+        "arrows_hover_border_type_color": BLUE,
+        "pagination": "bullets", "dots_position": "inside",
+        "dots_size": sl(9), "dots_gap": sl(3.5),
+        "dots_normal_color": "#C6D1DC", "dots_hover_color": "#9FB0C0",
+        "dots_custom_position": "yes",
+        "dots_horizontal_position": "end",
+        "dots_horizontal_offset": pos(-(CTL_PAD + 2 * ARROW + 8 + 18)),
+        "dots_vertical_position": "end",
+        "dots_vertical_offset": pos(-(16 + (ARROW - 9) // 2)),
+    }
     return s
 
 carousel = adv({
     "id": eid(), "elType": "widget", "widgetType": "nested-carousel",
     "settings": {"carousel_name": "Before and after customer projects",
                  "carousel_items": [{"slide_title": p[0], "_id": eid()} for p in PROJECTS],
-                 "slides_to_show": "1"},
-    "elements": [ba_slide(*p) for p in PROJECTS],
+                 "slides_to_show": "1", "slides_to_show_tablet": "1",
+                 "slides_to_show_mobile": "1", "slides_to_scroll": "1",
+                 "autoplay": "", "infinite": "yes", "speed": 400,
+                 "image_spacing_custom": sl(0), "image_spacing_custom_tablet": sl(0),
+                 "image_spacing_custom_mobile": sl(0),
+                 **ba_nav(),
+                 # active dot = 25px blue pill; dots hidden on phones (his file does both)
+                 "custom_css": (
+                     "selector .swiper-pagination-bullet{opacity:1;border-radius:999px;"
+                     "transition:width .2s,background .2s;}"
+                     "selector .swiper-pagination-bullet-active{width:25px;"
+                     "background:#12A7E2;}"
+                     "@media (max-width:767px){selector .swiper-pagination{display:none;}}")},
+    "elements": [ba_slide(i + 1, *p) for i, p in enumerate(PROJECTS)],
 }, bg=WHITE, border=(1, 1, 1, 1), border_color="#DCE5ED", radius=17,
    box_shadow=(0, 20, 55, 0, "rgba(8,26,51,0.09)"))
 
