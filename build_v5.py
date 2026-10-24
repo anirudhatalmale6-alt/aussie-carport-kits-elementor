@@ -252,15 +252,15 @@ def check_grid(items, color, icon_color, mt=24, mb=24):
                 cols="1fr 1fr", cols_m="1fr", g=(18, 10),
                 margin=dim(mt, 0, mb, 0))
 
-def form(name, fields, button_text, columns_gap=10):
+def form(name, fields, button_text, columns_gap=10, subject="New Patio Experts carport enquiry"):
     return widget(
         "form", form_name=name, form_fields=fields,
         input_size="md", show_labels="", mark_required="", label_position="above",
         button_text=button_text, button_size="sm", button_align="stretch",
         button_width="100",
         submit_actions=["email"],
-        email_to="info@aussiecarportkits.com.au",
-        email_subject="New Patio Experts carport enquiry",
+        email_to="info@patioexperts.com.au",
+        email_subject=subject,
         email_content="[all-fields]",
         email_from_name="Patio Experts Website",
         email_content_type="html",
@@ -358,13 +358,14 @@ quote_card = con([
         field("name", "text", "Full name", "50"),
         field("mobile", "tel", "Mobile number", "50"),
         field("suburb", "text", "Suburb / postcode", "50"),
-        field("carport", "select", "Your carport requirements", "50", required=False,
-              options="Your carport requirements\n"
+        field("carport", "select", "Your carport requirements", "100", required=False,
+              options="Your carport requirements|\n"
                       "Single package — 2.8m × 5.8m × 2.7m\n"
                       "Double package — 5.5m × 5m × 2.8m\n"
                       "Other single carport\nOther double carport\n"
                       "Attached carport — size to confirm\nOther / not sure yet"),
-    ], "Request My Written Quote →"),
+    ], "Request My Written Quote →",
+       subject="New carport quote request (top form) - Patio Experts"),
     adv(text("<p>Free, no-obligation enquiry. We’ll use your details to discuss your "
              "proposed carport.</p>", color="#778292", align="center", size=11.5),
         mt=10),
@@ -754,7 +755,8 @@ final_card = con([
     form("Final quote", [field("name", "text", "Name"),
                          field("phone", "tel", "Phone"),
                          field("suburb", "text", "Suburb / postcode")],
-         "Request My Carport Quote →", columns_gap=9),
+         "Request My Carport Quote →", columns_gap=9,
+         subject="New carport quote request (bottom form) - Patio Experts"),
     adv(heading(f"Or call {PHONE}", color=NAVY, align="center", link=TEL, size=16,
                 weight=900, lh=1.4), mt=13),
 ], flex_direction="column", padding=dim(28, 28, 28, 28), background_background="classic",
