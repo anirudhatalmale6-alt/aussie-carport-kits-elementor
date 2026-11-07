@@ -1,0 +1,4437 @@
+{
+ "version": "0.4",
+ "title": "Chloe Hart — Homepage",
+ "type": "page",
+ "content": [
+  {
+   "id": "050000d",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "custom",
+     "size": "min(1180px, calc(100% - 40px))",
+     "sizes": []
+    },
+    "boxed_width_tablet": {
+     "unit": "custom",
+     "size": "min(1180px, calc(100% - 40px))",
+     "sizes": []
+    },
+    "boxed_width_mobile": {
+     "unit": "custom",
+     "size": "calc(100% - 32px)",
+     "sizes": []
+    },
+    "flex_direction": "row",
+    "flex_direction_tablet": "column",
+    "flex_direction_mobile": "column",
+    "flex_align_items": "center",
+    "flex_gap": {
+     "unit": "px",
+     "size": 40,
+     "column": "40",
+     "row": "40",
+     "isLinked": true
+    },
+    "flex_gap_tablet": {
+     "unit": "px",
+     "size": 40,
+     "column": "40",
+     "row": "40",
+     "isLinked": true
+    },
+    "flex_wrap": "nowrap",
+    "padding": {
+     "unit": "px",
+     "top": "70",
+     "right": "0",
+     "bottom": "110",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "44",
+     "right": "0",
+     "bottom": "60",
+     "left": "0",
+     "isLinked": false
+    },
+    "_element_id": "top",
+    "css_classes": "ch-hero"
+   },
+   "elements": [
+    {
+     "id": "0500006",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0",
+       "isLinked": true
+      },
+      "width": {
+       "unit": "custom",
+       "size": "52%",
+       "sizes": []
+      },
+      "width_tablet": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "content_width": "full",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      },
+      "css_classes": "",
+      "animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "0500000",
+       "elType": "widget",
+       "settings": {
+        "title": "Chloe Hart · Rucked &amp; Ruined series",
+        "header_size": "div",
+        "title_color": "#E8A3B3",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.3,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "custom",
+         "size": "0.2em",
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "22",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "0500001",
+       "elType": "widget",
+       "settings": {
+        "title": "Good girls love <em>bad</em> stories<span class=\"ch-dot\">.</span>",
+        "header_size": "h1",
+        "title_color": "#FFF4EE",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Serif Display",
+        "typography_font_size": {
+         "unit": "custom",
+         "size": "clamp(52px, 7.6vw, 112px)",
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 50,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 0.92,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "custom",
+         "size": "-0.035em",
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "24",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "0500002",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Rugby league bad boys. Forbidden chemistry. Fierce women who refuse to play by the rules. Welcome to your next fictional obsession.</p>",
+        "text_color": "#C9B3BD",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 19,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.65,
+         "sizes": []
+        },
+        "_element_width": "initial",
+        "_element_custom_width": {
+         "unit": "custom",
+         "size": "min(560px, 100%)",
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "0500005",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "row",
+        "flex_wrap": "wrap",
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12",
+         "isLinked": true
+        },
+        "flex_align_items": "center",
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "css_classes": "ch-ctas",
+        "_margin": {
+         "unit": "px",
+         "top": "34",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "0500003",
+         "elType": "widget",
+         "settings": {
+          "text": "Start with Book One →",
+          "link": {
+           "url": "#book-1",
+           "is_external": "",
+           "nofollow": "",
+           "custom_attributes": ""
+          },
+          "size": "md",
+          "border_radius": {
+           "unit": "px",
+           "top": "999",
+           "right": "999",
+           "bottom": "999",
+           "left": "999",
+           "isLinked": true
+          },
+          "text_padding": {
+           "unit": "px",
+           "top": "18",
+           "right": "28",
+           "bottom": "18",
+           "left": "28",
+           "isLinked": false
+          },
+          "typography_typography": "custom",
+          "typography_font_family": "DM Sans",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "typography_font_weight": "700",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "custom",
+           "size": "0.08em",
+           "sizes": []
+          },
+          "typography_text_transform": "uppercase",
+          "background_background": "classic",
+          "background_color": "#D9708D",
+          "button_text_color": "#FFFFFF",
+          "hover_color": "#FFFFFF",
+          "button_background_hover_background": "classic",
+          "button_background_hover_color": "#C85A79",
+          "align_mobile": "justify"
+         },
+         "elements": [],
+         "widgetType": "button"
+        },
+        {
+         "id": "0500004",
+         "elType": "widget",
+         "settings": {
+          "text": "New release ↓",
+          "link": {
+           "url": "#new",
+           "is_external": "",
+           "nofollow": "",
+           "custom_attributes": ""
+          },
+          "size": "md",
+          "border_radius": {
+           "unit": "px",
+           "top": "999",
+           "right": "999",
+           "bottom": "999",
+           "left": "999",
+           "isLinked": true
+          },
+          "text_padding": {
+           "unit": "px",
+           "top": "18",
+           "right": "28",
+           "bottom": "18",
+           "left": "28",
+           "isLinked": false
+          },
+          "typography_typography": "custom",
+          "typography_font_family": "DM Sans",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "typography_font_weight": "700",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "custom",
+           "size": "0.08em",
+           "sizes": []
+          },
+          "typography_text_transform": "uppercase",
+          "background_background": "classic",
+          "background_color": "rgba(0,0,0,0)",
+          "button_text_color": "#FFF4EE",
+          "hover_color": "#140D13",
+          "button_background_hover_background": "classic",
+          "button_background_hover_color": "#FFF4EE",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1.5",
+           "right": "1.5",
+           "bottom": "1.5",
+           "left": "1.5",
+           "isLinked": true
+          },
+          "border_color": "rgba(255,244,238,0.45)",
+          "button_hover_border_color": "#FFF4EE",
+          "align_mobile": "justify"
+         },
+         "elements": [],
+         "widgetType": "button"
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "050000c",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0",
+       "isLinked": true
+      },
+      "width": {
+       "unit": "custom",
+       "size": "48%",
+       "sizes": []
+      },
+      "width_tablet": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "content_width": "full",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      },
+      "css_classes": "ch-fan"
+     },
+     "elements": [
+      {
+       "id": "0500007",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://raw.githubusercontent.com/anirudhatalmale6-alt/aussie-carport-kits-elementor/main/images/chloe-book1.webp",
+         "id": "",
+         "source": "library",
+         "alt": "Out of My League by Chloe Hart"
+        },
+        "image_size": "full",
+        "link_to": "custom",
+        "link": {
+         "url": "#book-1",
+         "is_external": "",
+         "nofollow": "",
+         "custom_attributes": ""
+        },
+        "_css_classes": "ch-cover ch-c1"
+       },
+       "elements": [],
+       "widgetType": "image"
+      },
+      {
+       "id": "0500008",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://raw.githubusercontent.com/anirudhatalmale6-alt/aussie-carport-kits-elementor/main/images/chloe-book3.webp",
+         "id": "",
+         "source": "library",
+         "alt": "Match of the Season by Chloe Hart"
+        },
+        "image_size": "full",
+        "link_to": "custom",
+        "link": {
+         "url": "#new",
+         "is_external": "",
+         "nofollow": "",
+         "custom_attributes": ""
+        },
+        "_css_classes": "ch-cover ch-c2"
+       },
+       "elements": [],
+       "widgetType": "image"
+      },
+      {
+       "id": "0500009",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://raw.githubusercontent.com/anirudhatalmale6-alt/aussie-carport-kits-elementor/main/images/chloe-book2.webp",
+         "id": "",
+         "source": "library",
+         "alt": "Name of the Game by Chloe Hart"
+        },
+        "image_size": "full",
+        "link_to": "custom",
+        "link": {
+         "url": "#book-2",
+         "is_external": "",
+         "nofollow": "",
+         "custom_attributes": ""
+        },
+        "_css_classes": "ch-cover ch-c3"
+       },
+       "elements": [],
+       "widgetType": "image"
+      },
+      {
+       "id": "050000a",
+       "elType": "widget",
+       "settings": {
+        "title": "New · Book 3",
+        "header_size": "div",
+        "title_color": "#22180A",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 11,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "custom",
+         "size": "0.18em",
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_css_classes": "ch-newtag"
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "050000b",
+       "elType": "widget",
+       "settings": {
+        "title": "Love hard.<br>Play dirty.",
+        "header_size": "div",
+        "title_color": "#5A2140",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Serif Display",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 25,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.08,
+         "sizes": []
+        },
+        "typography_font_style": "italic",
+        "align": "center",
+        "_css_classes": "ch-sticker ch-sticker-hero"
+       },
+       "elements": [],
+       "widgetType": "heading"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "050000e",
+   "elType": "widget",
+   "settings": {
+    "html": "<div class=\"ch-band\" aria-hidden=\"true\"><div class=\"ch-track\"><span>Brother’s best friend ✦</span><span>Fake dating ✦</span><span>Enemies to lovers ✦</span><span>Single dad ✦</span><span>Why choose ✦</span><span>Player × coach ✦</span><span>Second chances ✦</span><span>Brother’s best friend ✦</span><span>Fake dating ✦</span><span>Enemies to lovers ✦</span><span>Single dad ✦</span><span>Why choose ✦</span><span>Player × coach ✦</span><span>Second chances ✦</span></div></div>"
+   },
+   "elements": [],
+   "widgetType": "html"
+  },
+  {
+   "id": "0500017",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "custom",
+     "size": "min(1180px, calc(100% - 40px))",
+     "sizes": []
+    },
+    "boxed_width_tablet": {
+     "unit": "custom",
+     "size": "min(1180px, calc(100% - 40px))",
+     "sizes": []
+    },
+    "boxed_width_mobile": {
+     "unit": "custom",
+     "size": "calc(100% - 32px)",
+     "sizes": []
+    },
+    "flex_direction": "row",
+    "flex_direction_tablet": "column",
+    "flex_direction_mobile": "column",
+    "flex_align_items": "center",
+    "flex_gap": {
+     "unit": "px",
+     "size": 80,
+     "column": "80",
+     "row": "80",
+     "isLinked": true
+    },
+    "flex_gap_tablet": {
+     "unit": "px",
+     "size": 40,
+     "column": "40",
+     "row": "40",
+     "isLinked": true
+    },
+    "flex_wrap": "nowrap",
+    "padding": {
+     "unit": "px",
+     "top": "130",
+     "right": "0",
+     "bottom": "130",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "80",
+     "right": "0",
+     "bottom": "80",
+     "left": "0",
+     "isLinked": false
+    },
+    "_element_id": "new",
+    "css_classes": "ch-pinned ch-bg-turf"
+   },
+   "elements": [
+    {
+     "id": "050000f",
+     "elType": "widget",
+     "settings": {
+      "image": {
+       "url": "https://raw.githubusercontent.com/anirudhatalmale6-alt/aussie-carport-kits-elementor/main/images/chloe-book3.webp",
+       "id": "",
+       "source": "library",
+       "alt": "Match of the Season by Chloe Hart"
+      },
+      "image_size": "full",
+      "link_to": "custom",
+      "link": {
+       "url": "https://www.amazon.com.au/dp/B0HGWNQT1B",
+       "is_external": "on",
+       "nofollow": "",
+       "custom_attributes": ""
+      },
+      "_css_classes": "ch-cover-lg"
+     },
+     "elements": [],
+     "widgetType": "image"
+    },
+    {
+     "id": "0500016",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0",
+       "isLinked": true
+      },
+      "width": {
+       "unit": "custom",
+       "size": "58%",
+       "sizes": []
+      },
+      "width_tablet": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "content_width": "full",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      },
+      "css_classes": "",
+      "animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "0500010",
+       "elType": "widget",
+       "settings": {
+        "title": "New release · Rucked &amp; Ruined Book 3",
+        "header_size": "div",
+        "title_color": "#9FD3BD",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.3,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "custom",
+         "size": "0.2em",
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "18",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "0500011",
+       "elType": "widget",
+       "settings": {
+        "title": "Match of the Season",
+        "header_size": "h2",
+        "title_color": "#E7C36B",
+        "typography_typography": "custom",
+        "typography_font_family": "Bebas Neue",
+        "typography_font_size": {
+         "unit": "custom",
+         "size": "clamp(60px, 8vw, 118px)",
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 58,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 0.86,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "custom",
+         "size": "0.01em",
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "10",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "0500012",
+       "elType": "widget",
+       "settings": {
+        "title": "Lara + Mitchell + Casey",
+        "header_size": "div",
+        "title_color": "#F7DFE3",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Serif Display",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 26,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.2,
+         "sizes": []
+        },
+        "typography_font_style": "italic",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "22",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "0500013",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p style=\"margin:0\"><span class=\"ch-chip\">Rugby romance</span><span class=\"ch-chip\">Single dad</span><span class=\"ch-chip\">Why choose</span></p>",
+        "text_color": "#F7DFE3",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "0500014",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>A fresh start turns complicated when Lara finds herself falling for two very different rugby players who want the same thing: her.</p>",
+        "text_color": "#E7DDE2",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 19,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.65,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "22",
+         "right": "0",
+         "bottom": "30",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "0500015",
+       "elType": "widget",
+       "settings": {
+        "text": "Buy on Amazon",
+        "link": {
+         "url": "https://www.amazon.com.au/dp/B0HGWNQT1B",
+         "is_external": "on",
+         "nofollow": "",
+         "custom_attributes": ""
+        },
+        "size": "md",
+        "border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "text_padding": {
+         "unit": "px",
+         "top": "18",
+         "right": "28",
+         "bottom": "18",
+         "left": "28",
+         "isLinked": false
+        },
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "custom",
+         "size": "0.08em",
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "background_background": "classic",
+        "background_color": "#E7C36B",
+        "button_text_color": "#22180A",
+        "hover_color": "#22180A",
+        "button_background_hover_background": "classic",
+        "button_background_hover_color": "#F2D27F",
+        "align_mobile": "justify"
+       },
+       "elements": [],
+       "widgetType": "button"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "050003c",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "custom",
+     "size": "min(1180px, calc(100% - 40px))",
+     "sizes": []
+    },
+    "boxed_width_tablet": {
+     "unit": "custom",
+     "size": "min(1180px, calc(100% - 40px))",
+     "sizes": []
+    },
+    "boxed_width_mobile": {
+     "unit": "custom",
+     "size": "calc(100% - 32px)",
+     "sizes": []
+    },
+    "flex_direction": "row",
+    "flex_direction_tablet": "column",
+    "flex_direction_mobile": "column",
+    "flex_align_items": "flex-start",
+    "flex_gap": {
+     "unit": "px",
+     "size": 60,
+     "column": "60",
+     "row": "60",
+     "isLinked": true
+    },
+    "flex_gap_tablet": {
+     "unit": "px",
+     "size": 30,
+     "column": "30",
+     "row": "30",
+     "isLinked": true
+    },
+    "flex_wrap": "nowrap",
+    "padding": {
+     "unit": "px",
+     "top": "130",
+     "right": "0",
+     "bottom": "70",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "80",
+     "right": "0",
+     "bottom": "50",
+     "left": "0",
+     "isLinked": false
+    },
+    "_element_id": "books",
+    "css_classes": ""
+   },
+   "elements": [
+    {
+     "id": "050001c",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0",
+       "isLinked": true
+      },
+      "width": {
+       "unit": "custom",
+       "size": "38%",
+       "sizes": []
+      },
+      "width_tablet": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "content_width": "full",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      },
+      "css_classes": "ch-sticky"
+     },
+     "elements": [
+      {
+       "id": "0500018",
+       "elType": "widget",
+       "settings": {
+        "title": "The Rucked &amp; Ruined series",
+        "header_size": "div",
+        "title_color": "#E8A3B3",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.3,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "custom",
+         "size": "0.2em",
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "18",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "0500019",
+       "elType": "widget",
+       "settings": {
+        "title": "Love is a <em>contact sport.</em>",
+        "header_size": "h2",
+        "title_color": "#FFF4EE",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Serif Display",
+        "typography_font_size": {
+         "unit": "custom",
+         "size": "clamp(42px, 5.2vw, 76px)",
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 40,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 0.98,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "custom",
+         "size": "-0.03em",
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "22",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "050001a",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Three interconnected standalones set in the high-stakes world of Australian rugby league, where the games are brutal and the chemistry is even more dangerous.</p>",
+        "text_color": "#C9B3BD",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 18,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.65,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "050001b",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p class=\"ch-order\"><a href=\"#book-1\"><span>1</span>Out of My League</a><a href=\"#book-2\"><span>2</span>Name of the Game</a><a href=\"#book-3\"><span>3</span>Match of the Season</a></p>",
+        "text_color": "#F7DFE3",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.4,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "30",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "050003b",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 28,
+       "column": "28",
+       "row": "28",
+       "isLinked": true
+      },
+      "width": {
+       "unit": "custom",
+       "size": "62%",
+       "sizes": []
+      },
+      "width_tablet": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "content_width": "full",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      },
+      "css_classes": "ch-stack"
+     },
+     "elements": [
+      {
+       "id": "0500026",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "row",
+        "flex_gap": {
+         "unit": "px",
+         "size": 36,
+         "column": "36",
+         "row": "36",
+         "isLinked": true
+        },
+        "flex_align_items": "flex-start",
+        "flex_wrap": "nowrap",
+        "padding": {
+         "unit": "px",
+         "top": "40",
+         "right": "40",
+         "bottom": "40",
+         "left": "40",
+         "isLinked": true
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "22",
+         "right": "18",
+         "bottom": "22",
+         "left": "18",
+         "isLinked": false
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "26",
+         "right": "26",
+         "bottom": "26",
+         "left": "26",
+         "isLinked": true
+        },
+        "_element_id": "book-1",
+        "content_width": "full",
+        "css_classes": "ch-card ch-k1 ch-i0"
+       },
+       "elements": [
+        {
+         "id": "0500024",
+         "elType": "widget",
+         "settings": {
+          "title": "Rugby boys ruin lives",
+          "header_size": "div",
+          "title_color": "#5A2140",
+          "typography_typography": "custom",
+          "typography_font_family": "DM Serif Display",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 15,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_font_weight": "400",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1,
+           "sizes": []
+          },
+          "typography_font_style": "italic",
+          "_css_classes": "ch-tag"
+         },
+         "elements": [],
+         "widgetType": "heading"
+        },
+        {
+         "id": "0500025",
+         "elType": "widget",
+         "settings": {
+          "image": {
+           "url": "https://raw.githubusercontent.com/anirudhatalmale6-alt/aussie-carport-kits-elementor/main/images/chloe-book1.webp",
+           "id": "",
+           "source": "library",
+           "alt": "Out of My League book cover"
+          },
+          "image_size": "full",
+          "link_to": "custom",
+          "link": {
+           "url": "https://www.amazon.com.au/dp/B0F5BYW5YY",
+           "is_external": "on",
+           "nofollow": "",
+           "custom_attributes": ""
+          },
+          "_css_classes": "ch-card-cover"
+         },
+         "elements": [],
+         "widgetType": "image"
+        },
+        {
+         "id": "0500023",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 0,
+           "column": "0",
+           "row": "0",
+           "isLinked": true
+          },
+          "_flex_size": "grow",
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "css_classes": "ch-card-body"
+         },
+         "elements": [
+          {
+           "id": "050001d",
+           "elType": "widget",
+           "settings": {
+            "title": "Book one",
+            "header_size": "div",
+            "title_color": "rgba(255,244,238,0.75)",
+            "typography_typography": "custom",
+            "typography_font_family": "DM Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 12,
+             "sizes": []
+            },
+            "typography_font_weight": "700",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1,
+             "sizes": []
+            },
+            "typography_letter_spacing": {
+             "unit": "custom",
+             "size": "0.2em",
+             "sizes": []
+            },
+            "typography_text_transform": "uppercase"
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "050001e",
+           "elType": "widget",
+           "settings": {
+            "title": "Out of My League",
+            "header_size": "h3",
+            "title_color": "#FF8FB5",
+            "typography_typography": "custom",
+            "typography_font_family": "Bebas Neue",
+            "typography_font_size": {
+             "unit": "custom",
+             "size": "clamp(46px, 5vw, 70px)",
+             "sizes": []
+            },
+            "typography_font_size_mobile": {
+             "unit": "px",
+             "size": 38,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 0.88,
+             "sizes": []
+            },
+            "typography_letter_spacing": {
+             "unit": "custom",
+             "size": "0.01em",
+             "sizes": []
+            },
+            "_margin": {
+             "unit": "px",
+             "top": "12",
+             "right": "0",
+             "bottom": "6",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "050001f",
+           "elType": "widget",
+           "settings": {
+            "title": "Asher + Brittany",
+            "header_size": "div",
+            "title_color": "#F7DFE3",
+            "typography_typography": "custom",
+            "typography_font_family": "DM Serif Display",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 21,
+             "sizes": []
+            },
+            "typography_font_size_mobile": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.2,
+             "sizes": []
+            },
+            "typography_font_style": "italic",
+            "_margin": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "16",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "0500020",
+           "elType": "widget",
+           "settings": {
+            "editor": "<p style=\"margin:0\"><span class=\"ch-chip\">Brother’s best friend</span><span class=\"ch-chip\">Player × coach</span><span class=\"ch-chip\">Forbidden</span></p>",
+            "text_color": "#F7DFE3",
+            "typography_typography": "custom",
+            "typography_font_family": "DM Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 12,
+             "sizes": []
+            },
+            "typography_font_size_mobile": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          },
+          {
+           "id": "0500021",
+           "elType": "widget",
+           "settings": {
+            "editor": "<p>A rugby league bad boy meets the one woman he shouldn’t want: his best friend’s sister, who just became the team’s new coach.</p>",
+            "text_color": "#EADDE3",
+            "typography_typography": "custom",
+            "typography_font_family": "DM Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 16.5,
+             "sizes": []
+            },
+            "typography_font_size_mobile": {
+             "unit": "px",
+             "size": 15.5,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.65,
+             "sizes": []
+            },
+            "_margin": {
+             "unit": "px",
+             "top": "16",
+             "right": "0",
+             "bottom": "20",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          },
+          {
+           "id": "0500022",
+           "elType": "widget",
+           "settings": {
+            "text": "Buy on Amazon",
+            "link": {
+             "url": "https://www.amazon.com.au/dp/B0F5BYW5YY",
+             "is_external": "on",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "size": "md",
+            "border_radius": {
+             "unit": "px",
+             "top": "999",
+             "right": "999",
+             "bottom": "999",
+             "left": "999",
+             "isLinked": true
+            },
+            "text_padding": {
+             "unit": "px",
+             "top": "13",
+             "right": "20",
+             "bottom": "13",
+             "left": "20",
+             "isLinked": false
+            },
+            "typography_typography": "custom",
+            "typography_font_family": "DM Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 12.5,
+             "sizes": []
+            },
+            "typography_font_weight": "700",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1,
+             "sizes": []
+            },
+            "typography_letter_spacing": {
+             "unit": "custom",
+             "size": "0.08em",
+             "sizes": []
+            },
+            "typography_text_transform": "uppercase",
+            "background_background": "classic",
+            "background_color": "#D9708D",
+            "button_text_color": "#FFFFFF",
+            "hover_color": "#FFFFFF",
+            "button_background_hover_background": "classic",
+            "button_background_hover_color": "#C85A79"
+           },
+           "elements": [],
+           "widgetType": "button"
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "0500030",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "row",
+        "flex_gap": {
+         "unit": "px",
+         "size": 36,
+         "column": "36",
+         "row": "36",
+         "isLinked": true
+        },
+        "flex_align_items": "flex-start",
+        "flex_wrap": "nowrap",
+        "padding": {
+         "unit": "px",
+         "top": "40",
+         "right": "40",
+         "bottom": "40",
+         "left": "40",
+         "isLinked": true
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "22",
+         "right": "18",
+         "bottom": "22",
+         "left": "18",
+         "isLinked": false
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "26",
+         "right": "26",
+         "bottom": "26",
+         "left": "26",
+         "isLinked": true
+        },
+        "_element_id": "book-2",
+        "content_width": "full",
+        "css_classes": "ch-card ch-k2 ch-i1"
+       },
+       "elements": [
+        {
+         "id": "050002e",
+         "elType": "widget",
+         "settings": {
+          "title": "Fake it until it hurts",
+          "header_size": "div",
+          "title_color": "#5A2140",
+          "typography_typography": "custom",
+          "typography_font_family": "DM Serif Display",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 15,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_font_weight": "400",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1,
+           "sizes": []
+          },
+          "typography_font_style": "italic",
+          "_css_classes": "ch-tag"
+         },
+         "elements": [],
+         "widgetType": "heading"
+        },
+        {
+         "id": "050002f",
+         "elType": "widget",
+         "settings": {
+          "image": {
+           "url": "https://raw.githubusercontent.com/anirudhatalmale6-alt/aussie-carport-kits-elementor/main/images/chloe-book2.webp",
+           "id": "",
+           "source": "library",
+           "alt": "Name of the Game book cover"
+          },
+          "image_size": "full",
+          "link_to": "custom",
+          "link": {
+           "url": "https://www.amazon.com.au/dp/B0GHQC2CFQ",
+           "is_external": "on",
+           "nofollow": "",
+           "custom_attributes": ""
+          },
+          "_css_classes": "ch-card-cover"
+         },
+         "elements": [],
+         "widgetType": "image"
+        },
+        {
+         "id": "050002d",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 0,
+           "column": "0",
+           "row": "0",
+           "isLinked": true
+          },
+          "_flex_size": "grow",
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "css_classes": "ch-card-body"
+         },
+         "elements": [
+          {
+           "id": "0500027",
+           "elType": "widget",
+           "settings": {
+            "title": "Book two",
+            "header_size": "div",
+            "title_color": "rgba(255,244,238,0.75)",
+            "typography_typography": "custom",
+            "typography_font_family": "DM Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 12,
+             "sizes": []
+            },
+            "typography_font_weight": "700",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1,
+             "sizes": []
+            },
+            "typography_letter_spacing": {
+             "unit": "custom",
+             "size": "0.2em",
+             "sizes": []
+            },
+            "typography_text_transform": "uppercase"
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "0500028",
+           "elType": "widget",
+           "settings": {
+            "title": "Name of the Game",
+            "header_size": "h3",
+            "title_color": "#C6A2FF",
+            "typography_typography": "custom",
+            "typography_font_family": "Bebas Neue",
+            "typography_font_size": {
+             "unit": "custom",
+             "size": "clamp(46px, 5vw, 70px)",
+             "sizes": []
+            },
+            "typography_font_size_mobile": {
+             "unit": "px",
+             "size": 38,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 0.88,
+             "sizes": []
+            },
+            "typography_letter_spacing": {
+             "unit": "custom",
+             "size": "0.01em",
+             "sizes": []
+            },
+            "_margin": {
+             "unit": "px",
+             "top": "12",
+             "right": "0",
+             "bottom": "6",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "0500029",
+           "elType": "widget",
+           "settings": {
+            "title": "Cameron + Sarah",
+            "header_size": "div",
+            "title_color": "#F7DFE3",
+            "typography_typography": "custom",
+            "typography_font_family": "DM Serif Display",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 21,
+             "sizes": []
+            },
+            "typography_font_size_mobile": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.2,
+             "sizes": []
+            },
+            "typography_font_style": "italic",
+            "_margin": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "16",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "050002a",
+           "elType": "widget",
+           "settings": {
+            "editor": "<p style=\"margin:0\"><span class=\"ch-chip\">Fake dating</span><span class=\"ch-chip\">Enemies to lovers</span><span class=\"ch-chip\">Second chances</span></p>",
+            "text_color": "#F7DFE3",
+            "typography_typography": "custom",
+            "typography_font_family": "DM Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 12,
+             "sizes": []
+            },
+            "typography_font_size_mobile": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          },
+          {
+           "id": "050002b",
+           "elType": "widget",
+           "settings": {
+            "editor": "<p>Cameron and Sarah can barely stand each other. A fake relationship brings old wounds, dangerous chemistry and unfinished business back to the surface.</p>",
+            "text_color": "#EADDE3",
+            "typography_typography": "custom",
+            "typography_font_family": "DM Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 16.5,
+             "sizes": []
+            },
+            "typography_font_size_mobile": {
+             "unit": "px",
+             "size": 15.5,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.65,
+             "sizes": []
+            },
+            "_margin": {
+             "unit": "px",
+             "top": "16",
+             "right": "0",
+             "bottom": "20",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          },
+          {
+           "id": "050002c",
+           "elType": "widget",
+           "settings": {
+            "text": "Buy on Amazon",
+            "link": {
+             "url": "https://www.amazon.com.au/dp/B0GHQC2CFQ",
+             "is_external": "on",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "size": "md",
+            "border_radius": {
+             "unit": "px",
+             "top": "999",
+             "right": "999",
+             "bottom": "999",
+             "left": "999",
+             "isLinked": true
+            },
+            "text_padding": {
+             "unit": "px",
+             "top": "13",
+             "right": "20",
+             "bottom": "13",
+             "left": "20",
+             "isLinked": false
+            },
+            "typography_typography": "custom",
+            "typography_font_family": "DM Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 12.5,
+             "sizes": []
+            },
+            "typography_font_weight": "700",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1,
+             "sizes": []
+            },
+            "typography_letter_spacing": {
+             "unit": "custom",
+             "size": "0.08em",
+             "sizes": []
+            },
+            "typography_text_transform": "uppercase",
+            "background_background": "classic",
+            "background_color": "#D9708D",
+            "button_text_color": "#FFFFFF",
+            "hover_color": "#FFFFFF",
+            "button_background_hover_background": "classic",
+            "button_background_hover_color": "#C85A79"
+           },
+           "elements": [],
+           "widgetType": "button"
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "050003a",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "row",
+        "flex_gap": {
+         "unit": "px",
+         "size": 36,
+         "column": "36",
+         "row": "36",
+         "isLinked": true
+        },
+        "flex_align_items": "flex-start",
+        "flex_wrap": "nowrap",
+        "padding": {
+         "unit": "px",
+         "top": "40",
+         "right": "40",
+         "bottom": "40",
+         "left": "40",
+         "isLinked": true
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "22",
+         "right": "18",
+         "bottom": "22",
+         "left": "18",
+         "isLinked": false
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "26",
+         "right": "26",
+         "bottom": "26",
+         "left": "26",
+         "isLinked": true
+        },
+        "_element_id": "book-3",
+        "content_width": "full",
+        "css_classes": "ch-card ch-k3 ch-i2"
+       },
+       "elements": [
+        {
+         "id": "0500038",
+         "elType": "widget",
+         "settings": {
+          "title": "Twice the trouble",
+          "header_size": "div",
+          "title_color": "#5A2140",
+          "typography_typography": "custom",
+          "typography_font_family": "DM Serif Display",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 15,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_font_weight": "400",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1,
+           "sizes": []
+          },
+          "typography_font_style": "italic",
+          "_css_classes": "ch-tag"
+         },
+         "elements": [],
+         "widgetType": "heading"
+        },
+        {
+         "id": "0500039",
+         "elType": "widget",
+         "settings": {
+          "image": {
+           "url": "https://raw.githubusercontent.com/anirudhatalmale6-alt/aussie-carport-kits-elementor/main/images/chloe-book3.webp",
+           "id": "",
+           "source": "library",
+           "alt": "Match of the Season book cover"
+          },
+          "image_size": "full",
+          "link_to": "custom",
+          "link": {
+           "url": "https://www.amazon.com.au/dp/B0HGWNQT1B",
+           "is_external": "on",
+           "nofollow": "",
+           "custom_attributes": ""
+          },
+          "_css_classes": "ch-card-cover"
+         },
+         "elements": [],
+         "widgetType": "image"
+        },
+        {
+         "id": "0500037",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 0,
+           "column": "0",
+           "row": "0",
+           "isLinked": true
+          },
+          "_flex_size": "grow",
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "css_classes": "ch-card-body"
+         },
+         "elements": [
+          {
+           "id": "0500031",
+           "elType": "widget",
+           "settings": {
+            "title": "Book three · New",
+            "header_size": "div",
+            "title_color": "rgba(255,244,238,0.75)",
+            "typography_typography": "custom",
+            "typography_font_family": "DM Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 12,
+             "sizes": []
+            },
+            "typography_font_weight": "700",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1,
+             "sizes": []
+            },
+            "typography_letter_spacing": {
+             "unit": "custom",
+             "size": "0.2em",
+             "sizes": []
+            },
+            "typography_text_transform": "uppercase"
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "0500032",
+           "elType": "widget",
+           "settings": {
+            "title": "Match of the Season",
+            "header_size": "h3",
+            "title_color": "#E7C36B",
+            "typography_typography": "custom",
+            "typography_font_family": "Bebas Neue",
+            "typography_font_size": {
+             "unit": "custom",
+             "size": "clamp(46px, 5vw, 70px)",
+             "sizes": []
+            },
+            "typography_font_size_mobile": {
+             "unit": "px",
+             "size": 38,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 0.88,
+             "sizes": []
+            },
+            "typography_letter_spacing": {
+             "unit": "custom",
+             "size": "0.01em",
+             "sizes": []
+            },
+            "_margin": {
+             "unit": "px",
+             "top": "12",
+             "right": "0",
+             "bottom": "6",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "0500033",
+           "elType": "widget",
+           "settings": {
+            "title": "Lara + Mitchell + Casey",
+            "header_size": "div",
+            "title_color": "#F7DFE3",
+            "typography_typography": "custom",
+            "typography_font_family": "DM Serif Display",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 21,
+             "sizes": []
+            },
+            "typography_font_size_mobile": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.2,
+             "sizes": []
+            },
+            "typography_font_style": "italic",
+            "_margin": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "16",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "0500034",
+           "elType": "widget",
+           "settings": {
+            "editor": "<p style=\"margin:0\"><span class=\"ch-chip\">Rugby romance</span><span class=\"ch-chip\">Single dad</span><span class=\"ch-chip\">Why choose</span></p>",
+            "text_color": "#F7DFE3",
+            "typography_typography": "custom",
+            "typography_font_family": "DM Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 12,
+             "sizes": []
+            },
+            "typography_font_size_mobile": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          },
+          {
+           "id": "0500035",
+           "elType": "widget",
+           "settings": {
+            "editor": "<p>A fresh start turns complicated when Lara finds herself falling for two very different rugby players who want the same thing: her.</p>",
+            "text_color": "#EADDE3",
+            "typography_typography": "custom",
+            "typography_font_family": "DM Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 16.5,
+             "sizes": []
+            },
+            "typography_font_size_mobile": {
+             "unit": "px",
+             "size": 15.5,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.65,
+             "sizes": []
+            },
+            "_margin": {
+             "unit": "px",
+             "top": "16",
+             "right": "0",
+             "bottom": "20",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          },
+          {
+           "id": "0500036",
+           "elType": "widget",
+           "settings": {
+            "text": "Buy on Amazon",
+            "link": {
+             "url": "https://www.amazon.com.au/dp/B0HGWNQT1B",
+             "is_external": "on",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "size": "md",
+            "border_radius": {
+             "unit": "px",
+             "top": "999",
+             "right": "999",
+             "bottom": "999",
+             "left": "999",
+             "isLinked": true
+            },
+            "text_padding": {
+             "unit": "px",
+             "top": "13",
+             "right": "20",
+             "bottom": "13",
+             "left": "20",
+             "isLinked": false
+            },
+            "typography_typography": "custom",
+            "typography_font_family": "DM Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 12.5,
+             "sizes": []
+            },
+            "typography_font_weight": "700",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1,
+             "sizes": []
+            },
+            "typography_letter_spacing": {
+             "unit": "custom",
+             "size": "0.08em",
+             "sizes": []
+            },
+            "typography_text_transform": "uppercase",
+            "background_background": "classic",
+            "background_color": "#E7C36B",
+            "button_text_color": "#22180A",
+            "hover_color": "#22180A",
+            "button_background_hover_background": "classic",
+            "button_background_hover_color": "#F2D27F"
+           },
+           "elements": [],
+           "widgetType": "button"
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "050003e",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "custom",
+     "size": "min(1180px, calc(100% - 40px))",
+     "sizes": []
+    },
+    "boxed_width_tablet": {
+     "unit": "custom",
+     "size": "min(1180px, calc(100% - 40px))",
+     "sizes": []
+    },
+    "boxed_width_mobile": {
+     "unit": "custom",
+     "size": "calc(100% - 32px)",
+     "sizes": []
+    },
+    "flex_direction": "column",
+    "flex_direction_tablet": "column",
+    "flex_direction_mobile": "column",
+    "flex_align_items": "stretch",
+    "flex_gap": {
+     "unit": "px",
+     "size": 40,
+     "column": "40",
+     "row": "40",
+     "isLinked": true
+    },
+    "flex_gap_tablet": {
+     "unit": "px",
+     "size": 40,
+     "column": "40",
+     "row": "40",
+     "isLinked": true
+    },
+    "flex_wrap": "nowrap",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "40",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "30",
+     "left": "0",
+     "isLinked": false
+    },
+    "css_classes": ""
+   },
+   "elements": [
+    {
+     "id": "050003d",
+     "elType": "widget",
+     "settings": {
+      "editor": "<p>Content and trigger warnings are included at the front of each book.</p>",
+      "text_color": "#C9B3BD",
+      "typography_typography": "custom",
+      "typography_font_family": "DM Sans",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.65,
+       "sizes": []
+      },
+      "align": "center"
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "0500049",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "custom",
+     "size": "min(1180px, calc(100% - 40px))",
+     "sizes": []
+    },
+    "boxed_width_tablet": {
+     "unit": "custom",
+     "size": "min(1180px, calc(100% - 40px))",
+     "sizes": []
+    },
+    "boxed_width_mobile": {
+     "unit": "custom",
+     "size": "calc(100% - 32px)",
+     "sizes": []
+    },
+    "flex_direction": "column",
+    "flex_direction_tablet": "column",
+    "flex_direction_mobile": "column",
+    "flex_align_items": "stretch",
+    "flex_gap": {
+     "unit": "px",
+     "size": 40,
+     "column": "40",
+     "row": "40",
+     "isLinked": true
+    },
+    "flex_gap_tablet": {
+     "unit": "px",
+     "size": 40,
+     "column": "40",
+     "row": "40",
+     "isLinked": true
+    },
+    "flex_wrap": "nowrap",
+    "padding": {
+     "unit": "px",
+     "top": "150",
+     "right": "0",
+     "bottom": "150",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "80",
+     "right": "0",
+     "bottom": "80",
+     "left": "0",
+     "isLinked": false
+    },
+    "_element_id": "about",
+    "css_classes": "ch-pinned ch-bg-check"
+   },
+   "elements": [
+    {
+     "id": "0500048",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_direction_tablet": "column",
+      "flex_direction_mobile": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 70,
+       "column": "70",
+       "row": "70",
+       "isLinked": true
+      },
+      "flex_gap_tablet": {
+       "unit": "px",
+       "size": 36,
+       "column": "36",
+       "row": "36",
+       "isLinked": true
+      },
+      "flex_align_items": "center",
+      "padding": {
+       "unit": "px",
+       "top": "60",
+       "right": "60",
+       "bottom": "60",
+       "left": "60",
+       "isLinked": true
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "26",
+       "right": "22",
+       "bottom": "30",
+       "left": "22",
+       "isLinked": false
+      },
+      "background_background": "classic",
+      "background_color": "rgba(20,13,19,0.92)",
+      "border_border": "solid",
+      "border_width": {
+       "unit": "px",
+       "top": "1",
+       "right": "1",
+       "bottom": "1",
+       "left": "1",
+       "isLinked": true
+      },
+      "border_color": "rgba(255,228,236,0.16)",
+      "border_radius": {
+       "unit": "px",
+       "top": "30",
+       "right": "30",
+       "bottom": "30",
+       "left": "30",
+       "isLinked": true
+      },
+      "content_width": "full",
+      "animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "0500041",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "custom",
+         "size": "42%",
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "css_classes": "ch-photo"
+       },
+       "elements": [
+        {
+         "id": "050003f",
+         "elType": "widget",
+         "settings": {
+          "image": {
+           "url": "https://raw.githubusercontent.com/anirudhatalmale6-alt/aussie-carport-kits-elementor/main/images/chloe-author-photo-placeholder.webp",
+           "id": "",
+           "source": "library",
+           "alt": "Chloe Hart"
+          },
+          "image_size": "full",
+          "_css_classes": "ch-arch"
+         },
+         "elements": [],
+         "widgetType": "image"
+        },
+        {
+         "id": "0500040",
+         "elType": "widget",
+         "settings": {
+          "title": "A little<br>unhinged ♡",
+          "header_size": "div",
+          "title_color": "#5A2140",
+          "typography_typography": "custom",
+          "typography_font_family": "DM Serif Display",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 17,
+           "sizes": []
+          },
+          "typography_font_weight": "400",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.05,
+           "sizes": []
+          },
+          "typography_font_style": "italic",
+          "align": "center",
+          "_css_classes": "ch-sticker ch-sticker-about"
+         },
+         "elements": [],
+         "widgetType": "heading"
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "0500047",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "custom",
+         "size": "58%",
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "css_classes": ""
+       },
+       "elements": [
+        {
+         "id": "0500042",
+         "elType": "widget",
+         "settings": {
+          "title": "The author behind the chaos",
+          "header_size": "div",
+          "title_color": "#E8A3B3",
+          "typography_typography": "custom",
+          "typography_font_family": "DM Sans",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 12,
+           "sizes": []
+          },
+          "typography_font_weight": "700",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.3,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "custom",
+           "size": "0.2em",
+           "sizes": []
+          },
+          "typography_text_transform": "uppercase",
+          "_margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "16",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [],
+         "widgetType": "heading"
+        },
+        {
+         "id": "0500043",
+         "elType": "widget",
+         "settings": {
+          "title": "Hey, I’m <em>Chloe.</em>",
+          "header_size": "h2",
+          "title_color": "#FFF4EE",
+          "typography_typography": "custom",
+          "typography_font_family": "DM Serif Display",
+          "typography_font_size": {
+           "unit": "custom",
+           "size": "clamp(42px, 5.2vw, 76px)",
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 40,
+           "sizes": []
+          },
+          "typography_font_weight": "400",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 0.98,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "custom",
+           "size": "-0.03em",
+           "sizes": []
+          },
+          "_margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "22",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [],
+         "widgetType": "heading"
+        },
+        {
+         "id": "0500044",
+         "elType": "widget",
+         "settings": {
+          "editor": "<p>I write the kind of love stories that take over your thoughts, wreck your bedtime and make you question your taste in fictional men.</p><p>My Rucked &amp; Ruined series takes you into the high-stakes world of Australian rugby league, where the games are brutal and the chemistry is even more dangerous.</p><p>Come for the boys who play dirty. Stay for the women who give them a run for their money.</p>",
+          "text_color": "#C9B3BD",
+          "typography_typography": "custom",
+          "typography_font_family": "DM Sans",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 17,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_font_weight": "400",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.65,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "widgetType": "text-editor"
+        },
+        {
+         "id": "0500045",
+         "elType": "widget",
+         "settings": {
+          "title": "Love, Chloe x",
+          "header_size": "div",
+          "title_color": "#E8A3B3",
+          "typography_typography": "custom",
+          "typography_font_family": "DM Serif Display",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 34,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 30,
+           "sizes": []
+          },
+          "typography_font_weight": "400",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1,
+           "sizes": []
+          },
+          "typography_font_style": "italic",
+          "_margin": {
+           "unit": "px",
+           "top": "24",
+           "right": "0",
+           "bottom": "26",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [],
+         "widgetType": "heading"
+        },
+        {
+         "id": "0500046",
+         "elType": "widget",
+         "settings": {
+          "text": "Find me on Instagram ↗",
+          "link": {
+           "url": "https://www.instagram.com/chloehart.author/",
+           "is_external": "on",
+           "nofollow": "",
+           "custom_attributes": ""
+          },
+          "size": "md",
+          "border_radius": {
+           "unit": "px",
+           "top": "999",
+           "right": "999",
+           "bottom": "999",
+           "left": "999",
+           "isLinked": true
+          },
+          "text_padding": {
+           "unit": "px",
+           "top": "18",
+           "right": "28",
+           "bottom": "18",
+           "left": "28",
+           "isLinked": false
+          },
+          "typography_typography": "custom",
+          "typography_font_family": "DM Sans",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "typography_font_weight": "700",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "custom",
+           "size": "0.08em",
+           "sizes": []
+          },
+          "typography_text_transform": "uppercase",
+          "background_background": "classic",
+          "background_color": "rgba(0,0,0,0)",
+          "button_text_color": "#FFF4EE",
+          "hover_color": "#140D13",
+          "button_background_hover_background": "classic",
+          "button_background_hover_color": "#FFF4EE",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1.5",
+           "right": "1.5",
+           "bottom": "1.5",
+           "left": "1.5",
+           "isLinked": true
+          },
+          "border_color": "rgba(255,244,238,0.45)",
+          "button_hover_border_color": "#FFF4EE"
+         },
+         "elements": [],
+         "widgetType": "button"
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "050005e",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "custom",
+     "size": "min(1180px, calc(100% - 40px))",
+     "sizes": []
+    },
+    "boxed_width_tablet": {
+     "unit": "custom",
+     "size": "min(1180px, calc(100% - 40px))",
+     "sizes": []
+    },
+    "boxed_width_mobile": {
+     "unit": "custom",
+     "size": "calc(100% - 32px)",
+     "sizes": []
+    },
+    "flex_direction": "row",
+    "flex_direction_tablet": "column",
+    "flex_direction_mobile": "column",
+    "flex_align_items": "flex-start",
+    "flex_gap": {
+     "unit": "px",
+     "size": 90,
+     "column": "90",
+     "row": "90",
+     "isLinked": true
+    },
+    "flex_gap_tablet": {
+     "unit": "px",
+     "size": 30,
+     "column": "30",
+     "row": "30",
+     "isLinked": true
+    },
+    "flex_wrap": "nowrap",
+    "padding": {
+     "unit": "px",
+     "top": "130",
+     "right": "0",
+     "bottom": "130",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "80",
+     "right": "0",
+     "bottom": "80",
+     "left": "0",
+     "isLinked": false
+    },
+    "css_classes": ""
+   },
+   "elements": [
+    {
+     "id": "050004d",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0",
+       "isLinked": true
+      },
+      "width": {
+       "unit": "custom",
+       "size": "50%",
+       "sizes": []
+      },
+      "width_tablet": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "content_width": "full",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      },
+      "css_classes": "ch-sticky"
+     },
+     "elements": [
+      {
+       "id": "050004a",
+       "elType": "widget",
+       "settings": {
+        "title": "For the morally grey kind of reader",
+        "header_size": "div",
+        "title_color": "#E8A3B3",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.3,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "custom",
+         "size": "0.2em",
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "16",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "050004b",
+       "elType": "widget",
+       "settings": {
+        "title": "Where to <em>next?</em>",
+        "header_size": "h2",
+        "title_color": "#FFF4EE",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Serif Display",
+        "typography_font_size": {
+         "unit": "custom",
+         "size": "clamp(42px, 5.2vw, 76px)",
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 40,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 0.98,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "custom",
+         "size": "-0.03em",
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "18",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "050004c",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>A dangerous book boyfriend? An athlete with a filthy mouth? Pick your poison.</p>",
+        "text_color": "#C9B3BD",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 18,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.65,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "050005d",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 24,
+       "column": "24",
+       "row": "24",
+       "isLinked": true
+      },
+      "width": {
+       "unit": "custom",
+       "size": "50%",
+       "sizes": []
+      },
+      "width_tablet": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "content_width": "full",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      },
+      "css_classes": "ch-tiles"
+     },
+     "elements": [
+      {
+       "id": "0500052",
+       "elType": "container",
+       "settings": {
+        "html_tag": "a",
+        "link": {
+         "url": "#book-1",
+         "is_external": "",
+         "nofollow": "",
+         "custom_attributes": ""
+        },
+        "flex_direction": "column",
+        "flex_justify_content": "space-between",
+        "flex_gap": {
+         "unit": "px",
+         "size": 20,
+         "column": "20",
+         "row": "20",
+         "isLinked": true
+        },
+        "min_height": {
+         "unit": "px",
+         "size": 260,
+         "sizes": []
+        },
+        "min_height_mobile": {
+         "unit": "px",
+         "size": 230,
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "34",
+         "right": "34",
+         "bottom": "30",
+         "left": "34",
+         "isLinked": false
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "28",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": false
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "content_width": "full",
+        "css_classes": "ch-tile ch-t1 ch-i0"
+       },
+       "elements": [
+        {
+         "id": "0500050",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 0,
+           "column": "0",
+           "row": "0",
+           "isLinked": true
+          },
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "css_classes": ""
+         },
+         "elements": [
+          {
+           "id": "050004e",
+           "elType": "widget",
+           "settings": {
+            "title": "Start the series",
+            "header_size": "h3",
+            "title_color": "inherit",
+            "typography_typography": "custom",
+            "typography_font_family": "DM Serif Display",
+            "typography_font_size": {
+             "unit": "custom",
+             "size": "clamp(34px, 3.4vw, 46px)",
+             "sizes": []
+            },
+            "typography_font_size_mobile": {
+             "unit": "px",
+             "size": 32,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "050004f",
+           "elType": "widget",
+           "settings": {
+            "title": "Asher, Brittany and one very bad idea",
+            "header_size": "div",
+            "title_color": "inherit",
+            "typography_typography": "custom",
+            "typography_font_family": "DM Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 12.5,
+             "sizes": []
+            },
+            "typography_font_weight": "700",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.6,
+             "sizes": []
+            },
+            "typography_letter_spacing": {
+             "unit": "custom",
+             "size": "0.14em",
+             "sizes": []
+            },
+            "typography_text_transform": "uppercase",
+            "_margin": {
+             "unit": "px",
+             "top": "14",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "0500051",
+         "elType": "widget",
+         "settings": {
+          "title": "Book one →",
+          "header_size": "div",
+          "title_color": "#140D13",
+          "typography_typography": "custom",
+          "typography_font_family": "DM Sans",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 12.5,
+           "sizes": []
+          },
+          "typography_font_weight": "700",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "custom",
+           "size": "0.14em",
+           "sizes": []
+          },
+          "typography_text_transform": "uppercase",
+          "_css_classes": "ch-go"
+         },
+         "elements": [],
+         "widgetType": "heading"
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "0500057",
+       "elType": "container",
+       "settings": {
+        "html_tag": "a",
+        "link": {
+         "url": "#list",
+         "is_external": "",
+         "nofollow": "",
+         "custom_attributes": ""
+        },
+        "flex_direction": "column",
+        "flex_justify_content": "space-between",
+        "flex_gap": {
+         "unit": "px",
+         "size": 20,
+         "column": "20",
+         "row": "20",
+         "isLinked": true
+        },
+        "min_height": {
+         "unit": "px",
+         "size": 260,
+         "sizes": []
+        },
+        "min_height_mobile": {
+         "unit": "px",
+         "size": 230,
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "34",
+         "right": "34",
+         "bottom": "30",
+         "left": "34",
+         "isLinked": false
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "28",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": false
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "content_width": "full",
+        "css_classes": "ch-tile ch-t2 ch-i1"
+       },
+       "elements": [
+        {
+         "id": "0500055",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 0,
+           "column": "0",
+           "row": "0",
+           "isLinked": true
+          },
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "css_classes": ""
+         },
+         "elements": [
+          {
+           "id": "0500053",
+           "elType": "widget",
+           "settings": {
+            "title": "Get the extras",
+            "header_size": "h3",
+            "title_color": "inherit",
+            "typography_typography": "custom",
+            "typography_font_family": "DM Serif Display",
+            "typography_font_size": {
+             "unit": "custom",
+             "size": "clamp(34px, 3.4vw, 46px)",
+             "sizes": []
+            },
+            "typography_font_size_mobile": {
+             "unit": "px",
+             "size": 32,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "0500054",
+           "elType": "widget",
+           "settings": {
+            "title": "Cover reveals, bonus content and first dibs on new releases",
+            "header_size": "div",
+            "title_color": "inherit",
+            "typography_typography": "custom",
+            "typography_font_family": "DM Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 12.5,
+             "sizes": []
+            },
+            "typography_font_weight": "700",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.6,
+             "sizes": []
+            },
+            "typography_letter_spacing": {
+             "unit": "custom",
+             "size": "0.14em",
+             "sizes": []
+            },
+            "typography_text_transform": "uppercase",
+            "_margin": {
+             "unit": "px",
+             "top": "14",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "0500056",
+         "elType": "widget",
+         "settings": {
+          "title": "Join the list →",
+          "header_size": "div",
+          "title_color": "#140D13",
+          "typography_typography": "custom",
+          "typography_font_family": "DM Sans",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 12.5,
+           "sizes": []
+          },
+          "typography_font_weight": "700",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "custom",
+           "size": "0.14em",
+           "sizes": []
+          },
+          "typography_text_transform": "uppercase",
+          "_css_classes": "ch-go"
+         },
+         "elements": [],
+         "widgetType": "heading"
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "050005c",
+       "elType": "container",
+       "settings": {
+        "html_tag": "a",
+        "link": {
+         "url": "https://www.instagram.com/chloehart.author/",
+         "is_external": "on",
+         "nofollow": "",
+         "custom_attributes": ""
+        },
+        "flex_direction": "column",
+        "flex_justify_content": "space-between",
+        "flex_gap": {
+         "unit": "px",
+         "size": 20,
+         "column": "20",
+         "row": "20",
+         "isLinked": true
+        },
+        "min_height": {
+         "unit": "px",
+         "size": 260,
+         "sizes": []
+        },
+        "min_height_mobile": {
+         "unit": "px",
+         "size": 230,
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "34",
+         "right": "34",
+         "bottom": "30",
+         "left": "34",
+         "isLinked": false
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "28",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": false
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "content_width": "full",
+        "css_classes": "ch-tile ch-t3 ch-i2"
+       },
+       "elements": [
+        {
+         "id": "050005a",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 0,
+           "column": "0",
+           "row": "0",
+           "isLinked": true
+          },
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "css_classes": ""
+         },
+         "elements": [
+          {
+           "id": "0500058",
+           "elType": "widget",
+           "settings": {
+            "title": "Come say hi",
+            "header_size": "h3",
+            "title_color": "inherit",
+            "typography_typography": "custom",
+            "typography_font_family": "DM Serif Display",
+            "typography_font_size": {
+             "unit": "custom",
+             "size": "clamp(34px, 3.4vw, 46px)",
+             "sizes": []
+            },
+            "typography_font_size_mobile": {
+             "unit": "px",
+             "size": 32,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "0500059",
+           "elType": "widget",
+           "settings": {
+            "title": "Teasers, book boyfriends and the chaos behind the pages",
+            "header_size": "div",
+            "title_color": "inherit",
+            "typography_typography": "custom",
+            "typography_font_family": "DM Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 12.5,
+             "sizes": []
+            },
+            "typography_font_weight": "700",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.6,
+             "sizes": []
+            },
+            "typography_letter_spacing": {
+             "unit": "custom",
+             "size": "0.14em",
+             "sizes": []
+            },
+            "typography_text_transform": "uppercase",
+            "_margin": {
+             "unit": "px",
+             "top": "14",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "050005b",
+         "elType": "widget",
+         "settings": {
+          "title": "@chloehart.author ↗",
+          "header_size": "div",
+          "title_color": "#140D13",
+          "typography_typography": "custom",
+          "typography_font_family": "DM Sans",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 12.5,
+           "sizes": []
+          },
+          "typography_font_weight": "700",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "custom",
+           "size": "0.14em",
+           "sizes": []
+          },
+          "typography_text_transform": "uppercase",
+          "_css_classes": "ch-go"
+         },
+         "elements": [],
+         "widgetType": "heading"
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "0500064",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "custom",
+     "size": "min(1180px, calc(100% - 40px))",
+     "sizes": []
+    },
+    "boxed_width_tablet": {
+     "unit": "custom",
+     "size": "min(1180px, calc(100% - 40px))",
+     "sizes": []
+    },
+    "boxed_width_mobile": {
+     "unit": "custom",
+     "size": "calc(100% - 32px)",
+     "sizes": []
+    },
+    "flex_direction": "column",
+    "flex_direction_tablet": "column",
+    "flex_direction_mobile": "column",
+    "flex_align_items": "stretch",
+    "flex_gap": {
+     "unit": "px",
+     "size": 40,
+     "column": "40",
+     "row": "40",
+     "isLinked": true
+    },
+    "flex_gap_tablet": {
+     "unit": "px",
+     "size": 40,
+     "column": "40",
+     "row": "40",
+     "isLinked": true
+    },
+    "flex_wrap": "nowrap",
+    "padding": {
+     "unit": "px",
+     "top": "140",
+     "right": "0",
+     "bottom": "140",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "80",
+     "right": "0",
+     "bottom": "80",
+     "left": "0",
+     "isLinked": false
+    },
+    "_element_id": "list",
+    "css_classes": "ch-pinned ch-bg-hearts"
+   },
+   "elements": [
+    {
+     "id": "0500063",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_align_items": "stretch",
+      "width": {
+       "unit": "custom",
+       "size": "min(820px, 100%)",
+       "sizes": []
+      },
+      "width_tablet": {
+       "unit": "custom",
+       "size": "min(820px, 100%)",
+       "sizes": []
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "margin": {
+       "unit": "px",
+       "top": "0",
+       "right": "auto",
+       "bottom": "0",
+       "left": "auto",
+       "isLinked": false
+      },
+      "padding": {
+       "unit": "px",
+       "top": "64",
+       "right": "64",
+       "bottom": "64",
+       "left": "64",
+       "isLinked": true
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "32",
+       "right": "22",
+       "bottom": "32",
+       "left": "22",
+       "isLinked": false
+      },
+      "background_background": "classic",
+      "background_color": "#FFF4EE",
+      "border_radius": {
+       "unit": "px",
+       "top": "30",
+       "right": "30",
+       "bottom": "30",
+       "left": "30",
+       "isLinked": true
+      },
+      "box_shadow_box_shadow_type": "yes",
+      "box_shadow_box_shadow": {
+       "horizontal": 0,
+       "vertical": 40,
+       "blur": 90,
+       "spread": 0,
+       "color": "rgba(60,10,30,0.35)"
+      },
+      "content_width": "full",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0",
+       "isLinked": true
+      },
+      "animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "050005f",
+       "elType": "widget",
+       "settings": {
+        "title": "Your invitation to the dark side",
+        "header_size": "div",
+        "title_color": "#D9708D",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.3,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "custom",
+         "size": "0.2em",
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "align": "center",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "16",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "0500060",
+       "elType": "widget",
+       "settings": {
+        "title": "Get on <em>the list.</em>",
+        "header_size": "h2",
+        "title_color": "#2A0F20",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Serif Display",
+        "typography_font_size": {
+         "unit": "custom",
+         "size": "clamp(42px, 5.2vw, 76px)",
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 40,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 0.98,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "custom",
+         "size": "-0.03em",
+         "sizes": []
+        },
+        "align": "center",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "16",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "0500061",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>First dibs on new releases, cover reveals, exclusive extras and all the chaos behind the pages. No boring emails. Promise.</p>",
+        "text_color": "#6D4A5B",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.65,
+         "sizes": []
+        },
+        "align": "center"
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "0500062",
+       "elType": "widget",
+       "settings": {
+        "html": "<!-- NEWSLETTER: replace everything inside this box with the MailerLite embed code -->\n<form class=\"ch-news-form\" onsubmit=\"return false\">\n  <input type=\"text\" name=\"first_name\" placeholder=\"First name\" aria-label=\"First name\">\n  <input type=\"email\" name=\"email\" placeholder=\"Email address\" aria-label=\"Email address\" required>\n  <button type=\"submit\">Count me in</button>\n</form>",
+        "_css_classes": "ch-news-embed",
+        "_margin": {
+         "unit": "px",
+         "top": "30",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "html"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "0500071",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "custom",
+     "size": "min(1180px, calc(100% - 40px))",
+     "sizes": []
+    },
+    "boxed_width_tablet": {
+     "unit": "custom",
+     "size": "min(1180px, calc(100% - 40px))",
+     "sizes": []
+    },
+    "boxed_width_mobile": {
+     "unit": "custom",
+     "size": "calc(100% - 32px)",
+     "sizes": []
+    },
+    "flex_direction": "column",
+    "flex_direction_tablet": "column",
+    "flex_direction_mobile": "column",
+    "flex_align_items": "stretch",
+    "flex_gap": {
+     "unit": "px",
+     "size": 28,
+     "column": "28",
+     "row": "28",
+     "isLinked": true
+    },
+    "flex_gap_tablet": {
+     "unit": "px",
+     "size": 28,
+     "column": "28",
+     "row": "28",
+     "isLinked": true
+    },
+    "flex_wrap": "nowrap",
+    "padding": {
+     "unit": "px",
+     "top": "110",
+     "right": "0",
+     "bottom": "80",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "70",
+     "right": "0",
+     "bottom": "60",
+     "left": "0",
+     "isLinked": false
+    },
+    "_element_id": "instagram",
+    "css_classes": ""
+   },
+   "elements": [
+    {
+     "id": "0500069",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_wrap": "wrap",
+      "flex_gap": {
+       "unit": "px",
+       "size": 20,
+       "column": "20",
+       "row": "20",
+       "isLinked": true
+      },
+      "flex_align_items": "flex-end",
+      "flex_justify_content": "space-between",
+      "content_width": "full",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      },
+      "css_classes": ""
+     },
+     "elements": [
+      {
+       "id": "0500067",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": true
+        },
+        "width": {
+         "unit": "custom",
+         "size": "auto",
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "css_classes": ""
+       },
+       "elements": [
+        {
+         "id": "0500065",
+         "elType": "widget",
+         "settings": {
+          "title": "Follow along",
+          "header_size": "div",
+          "title_color": "#E8A3B3",
+          "typography_typography": "custom",
+          "typography_font_family": "DM Sans",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 12,
+           "sizes": []
+          },
+          "typography_font_weight": "700",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.3,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "custom",
+           "size": "0.2em",
+           "sizes": []
+          },
+          "typography_text_transform": "uppercase",
+          "_margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "12",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [],
+         "widgetType": "heading"
+        },
+        {
+         "id": "0500066",
+         "elType": "widget",
+         "settings": {
+          "title": "@chloehart.author",
+          "header_size": "h2",
+          "title_color": "#FFF4EE",
+          "typography_typography": "custom",
+          "typography_font_family": "DM Serif Display",
+          "typography_font_size": {
+           "unit": "custom",
+           "size": "clamp(32px, 3.4vw, 46px)",
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 32,
+           "sizes": []
+          },
+          "typography_font_weight": "400",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.02,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "custom",
+           "size": "-0.02em",
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "widgetType": "heading"
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "0500068",
+       "elType": "widget",
+       "settings": {
+        "text": "Follow on Instagram ↗",
+        "link": {
+         "url": "https://www.instagram.com/chloehart.author/",
+         "is_external": "on",
+         "nofollow": "",
+         "custom_attributes": ""
+        },
+        "size": "md",
+        "border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "text_padding": {
+         "unit": "px",
+         "top": "13",
+         "right": "20",
+         "bottom": "13",
+         "left": "20",
+         "isLinked": false
+        },
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12.5,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "custom",
+         "size": "0.08em",
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "background_background": "classic",
+        "background_color": "rgba(0,0,0,0)",
+        "button_text_color": "#FFF4EE",
+        "hover_color": "#140D13",
+        "button_background_hover_background": "classic",
+        "button_background_hover_color": "#FFF4EE",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1.5",
+         "right": "1.5",
+         "bottom": "1.5",
+         "left": "1.5",
+         "isLinked": true
+        },
+        "border_color": "rgba(255,244,238,0.45)",
+        "button_hover_border_color": "#FFF4EE"
+       },
+       "elements": [],
+       "widgetType": "button"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "0500070",
+     "elType": "container",
+     "settings": {
+      "container_type": "grid",
+      "grid_columns_grid": {
+       "unit": "custom",
+       "size": "repeat(6, minmax(0, 1fr))",
+       "sizes": []
+      },
+      "grid_columns_grid_tablet": {
+       "unit": "custom",
+       "size": "repeat(3, minmax(0, 1fr))",
+       "sizes": []
+      },
+      "grid_columns_grid_mobile": {
+       "unit": "custom",
+       "size": "repeat(2, minmax(0, 1fr))",
+       "sizes": []
+      },
+      "grid_rows_grid": {
+       "unit": "custom",
+       "size": "auto",
+       "sizes": []
+      },
+      "grid_rows_grid_tablet": {
+       "unit": "custom",
+       "size": "auto",
+       "sizes": []
+      },
+      "grid_rows_grid_mobile": {
+       "unit": "custom",
+       "size": "auto",
+       "sizes": []
+      },
+      "grid_gaps": {
+       "unit": "px",
+       "size": 10,
+       "column": "10",
+       "row": "10",
+       "isLinked": false
+      },
+      "content_width": "full",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0",
+       "isLinked": true
+      },
+      "css_classes": "ch-ig-grid"
+     },
+     "elements": [
+      {
+       "id": "050006a",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://raw.githubusercontent.com/anirudhatalmale6-alt/aussie-carport-kits-elementor/main/images/chloe-book1.webp",
+         "id": "",
+         "source": "library",
+         "alt": ""
+        },
+        "image_size": "full",
+        "link_to": "custom",
+        "link": {
+         "url": "https://www.instagram.com/chloehart.author/",
+         "is_external": "on",
+         "nofollow": "",
+         "custom_attributes": ""
+        },
+        "_css_classes": "ch-ig ch-ig-0"
+       },
+       "elements": [],
+       "widgetType": "image"
+      },
+      {
+       "id": "050006b",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://raw.githubusercontent.com/anirudhatalmale6-alt/aussie-carport-kits-elementor/main/images/chloe-book2.webp",
+         "id": "",
+         "source": "library",
+         "alt": ""
+        },
+        "image_size": "full",
+        "link_to": "custom",
+        "link": {
+         "url": "https://www.instagram.com/chloehart.author/",
+         "is_external": "on",
+         "nofollow": "",
+         "custom_attributes": ""
+        },
+        "_css_classes": "ch-ig ch-ig-1"
+       },
+       "elements": [],
+       "widgetType": "image"
+      },
+      {
+       "id": "050006c",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://raw.githubusercontent.com/anirudhatalmale6-alt/aussie-carport-kits-elementor/main/images/chloe-book3.webp",
+         "id": "",
+         "source": "library",
+         "alt": ""
+        },
+        "image_size": "full",
+        "link_to": "custom",
+        "link": {
+         "url": "https://www.instagram.com/chloehart.author/",
+         "is_external": "on",
+         "nofollow": "",
+         "custom_attributes": ""
+        },
+        "_css_classes": "ch-ig ch-ig-2"
+       },
+       "elements": [],
+       "widgetType": "image"
+      },
+      {
+       "id": "050006d",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://raw.githubusercontent.com/anirudhatalmale6-alt/aussie-carport-kits-elementor/main/images/chloe-book1.webp",
+         "id": "",
+         "source": "library",
+         "alt": ""
+        },
+        "image_size": "full",
+        "link_to": "custom",
+        "link": {
+         "url": "https://www.instagram.com/chloehart.author/",
+         "is_external": "on",
+         "nofollow": "",
+         "custom_attributes": ""
+        },
+        "_css_classes": "ch-ig ch-ig-3"
+       },
+       "elements": [],
+       "widgetType": "image"
+      },
+      {
+       "id": "050006e",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://raw.githubusercontent.com/anirudhatalmale6-alt/aussie-carport-kits-elementor/main/images/chloe-book2.webp",
+         "id": "",
+         "source": "library",
+         "alt": ""
+        },
+        "image_size": "full",
+        "link_to": "custom",
+        "link": {
+         "url": "https://www.instagram.com/chloehart.author/",
+         "is_external": "on",
+         "nofollow": "",
+         "custom_attributes": ""
+        },
+        "_css_classes": "ch-ig ch-ig-4"
+       },
+       "elements": [],
+       "widgetType": "image"
+      },
+      {
+       "id": "050006f",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://raw.githubusercontent.com/anirudhatalmale6-alt/aussie-carport-kits-elementor/main/images/chloe-book3.webp",
+         "id": "",
+         "source": "library",
+         "alt": ""
+        },
+        "image_size": "full",
+        "link_to": "custom",
+        "link": {
+         "url": "https://www.instagram.com/chloehart.author/",
+         "is_external": "on",
+         "nofollow": "",
+         "custom_attributes": ""
+        },
+        "_css_classes": "ch-ig ch-ig-5"
+       },
+       "elements": [],
+       "widgetType": "image"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "0500072",
+   "elType": "widget",
+   "settings": {
+    "html": "<script>\n/* Stacked book cards: the card underneath shrinks and dims as the next one slides over it. */\n(function(){\n  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;\n  var cards = [].slice.call(document.querySelectorAll('.ch-card')), busy = false;\n  function run(){\n    cards.forEach(function(c, i){\n      var n = cards[i + 1];\n      if (!n) { c.style.transform = ''; c.style.filter = ''; return; }\n      var gap = n.getBoundingClientRect().top - c.getBoundingClientRect().top;\n      var p = Math.min(1, Math.max(0, 1 - gap / c.offsetHeight));\n      c.style.transform = 'scale(' + (1 - p * 0.06) + ')';\n      c.style.filter = 'brightness(' + (1 - p * 0.35) + ')';\n    });\n    busy = false;\n  }\n  window.addEventListener('scroll', function(){ if (!busy) { busy = true; requestAnimationFrame(run); } }, {passive: true});\n  run();\n})();\n</script>",
+    "_css_classes": "ch-js"
+   },
+   "elements": [],
+   "widgetType": "html"
+  }
+ ],
+ "page_settings": {
+  "template": "elementor_header_footer",
+  "hide_title": "yes",
+  "background_background": "classic",
+  "background_color": "#140D13"
+ }
+}

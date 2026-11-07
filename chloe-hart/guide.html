@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Chloe Hart website: install steps</title>
+<style>
+@page{size:A4;margin:16mm 15mm}
+body{font:11pt/1.55 'DejaVu Sans',Arial,sans-serif;color:#2a1424}
+h1{font:700 22pt/1.1 Georgia,serif;color:#5a2140;margin:0 0 4px}
+.sub{color:#8a6a79;margin:0 0 18px}
+h2{font:700 13pt/1.2 Arial,sans-serif;color:#d9708d;margin:22px 0 8px;padding-top:10px;border-top:1px solid #f0d9df}
+ol{margin:0 0 6px 20px;padding:0}li{margin:0 0 6px}
+b{color:#5a2140}
+code{background:#f7dfe3;padding:1px 6px;border-radius:4px;font-size:10pt}
+.box{background:#fff4ee;border:1px solid #f0d9df;border-radius:8px;padding:10px 14px;margin:10px 0}
+table{border-collapse:collapse;width:100%;margin:6px 0}td{border:1px solid #f0d9df;padding:6px 8px;vertical-align:top}
+td:first-child{white-space:nowrap;font-weight:700;color:#5a2140}
+</style></head><body>
+<h1>Chloe Hart website: install steps</h1>
+<p class="sub">Free Elementor only. Takes about 15 minutes. Do the steps in this order.</p>
+
+<div class="box"><b>In the zip:</b><br>
+1-chloe-hart-homepage.json (the homepage)<br>
+2-chloe-hart-header.json (header with menu, shows on every page)<br>
+3-chloe-hart-footer.json (footer, shows on every page)<br>
+4-chloe-hart-additional-css.txt (the CSS for the stacking cards and still backgrounds)</div>
+
+<h2>Step 1: Theme and plugins</h2>
+<ol>
+<li><b>Appearance &gt; Themes &gt; Add New</b>: search <b>Hello Elementor</b>, Install, Activate.</li>
+<li><b>Plugins &gt; Add New</b>: install and activate <b>Elementor</b> (free).</li>
+<li><b>Plugins &gt; Add New</b>: search <b>Ultimate Addons for Elementor</b> (by Brainstorm Force, formerly "Elementor Header &amp; Footer Builder"), install and activate.</li>
+</ol>
+
+<h2>Step 2: Import the 3 templates</h2>
+<ol>
+<li><b>Templates &gt; Saved Templates</b> (in the Elementor menu), click <b>Import Templates</b>.</li>
+<li>Import <code>1-chloe-hart-homepage.json</code>, then <code>2-chloe-hart-header.json</code>, then <code>3-chloe-hart-footer.json</code>. The book covers download into her Media Library automatically.</li>
+</ol>
+
+<h2>Step 3: Create the homepage</h2>
+<ol>
+<li><b>Pages &gt; Add New</b>, title it <b>Home</b>, click <b>Edit with Elementor</b>.</li>
+<li>Click the grey <b>folder icon</b> (Add Template), open the <b>My Templates</b> tab, find <b>Chloe Hart — Homepage</b> and click <b>Insert</b>. If it asks to apply the template's page settings, choose <b>Yes</b>.</li>
+<li>Bottom-left gear icon (Page Settings): set <b>Page Layout</b> to <b>Elementor Full Width</b>. Click <b>Publish</b>.</li>
+<li><b>Settings &gt; Reading</b>: "Your homepage displays" = <b>A static page</b>, Homepage = <b>Home</b>. Save.</li>
+</ol>
+
+<h2>Step 4: The menu</h2>
+<ol>
+<li><b>Appearance &gt; Menus</b>: create a menu called <b>Main menu</b>.</li>
+<li>Under <b>Custom Links</b> add three links:
+<table><tr><td>/#books</td><td>The books</td></tr><tr><td>/#about</td><td>Meet Chloe</td></tr><tr><td>/#list</td><td>Newsletter</td></tr></table>
+Save Menu. (Later, add the book pages here too.)</li>
+</ol>
+
+<h2>Step 5: Header and footer</h2>
+<ol>
+<li>In the left admin menu go to <b>UAE &gt; Header &amp; Footer</b> and click <b>Add New</b>.</li>
+<li>Title <b>Header</b>, Type of Template = <b>Header</b>, Display On = <b>Entire Website</b>. Click <b>Publish</b>, then <b>Edit with Elementor</b>.</li>
+<li>Folder icon &gt; <b>My Templates</b> &gt; <b>Chloe Hart — Header</b> &gt; <b>Insert</b>. Click the menu widget and make sure <b>Main menu</b> is selected. <b>Update</b>.</li>
+<li>Repeat for the footer: Add New, title <b>Footer</b>, Type = <b>Footer</b>, Display On = <b>Entire Website</b>, insert <b>Chloe Hart — Footer</b>, Update.</li>
+</ol>
+
+<h2>Step 6: The CSS (makes the cards stack and the backgrounds stay still)</h2>
+<ol>
+<li><b>Appearance &gt; Customize &gt; Additional CSS</b>.</li>
+<li>Open <code>4-chloe-hart-additional-css.txt</code>, copy everything, paste it into the box and click <b>Publish</b>.</li>
+</ol>
+
+<h2>Step 7: Her own content</h2>
+<table>
+<tr><td>Newsletter</td><td>MailerLite: <b>Forms &gt; Embedded forms &gt; Create</b>, add First name + Email, save and copy the <b>HTML code</b>. In Elementor, click the form in the pink "Get on the list" card (an HTML widget) and replace its content with that code. The CSS is set up to restyle MailerLite's standard form to match the card. Easiest: send me the code and I'll put it in and check it.</td></tr>
+<tr><td>Author photo</td><td>Click the arch image in "Hey, I'm Chloe" and choose her photo (portrait works best).</td></tr>
+<tr><td>Buy links</td><td>The Buy buttons and covers link to Amazon Australia. Change them in each button's Link field if she uses other links.</td></tr>
+<tr><td>Instagram</td><td>Install <b>Smash Balloon Instagram Feed</b> (free) and connect her account. Then delete the 6 placeholder tiles and add a <b>Shortcode</b> widget with <code>[instagram-feed]</code>.</td></tr>
+</table>
+
+<div class="box">Tip: if anything looks unstyled after importing, go to <b>Elementor &gt; Tools &gt; Regenerate CSS &amp; Data</b>, then clear any caching plugin.</div>
+</body></html>

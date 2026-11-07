@@ -1,0 +1,137 @@
+/* =====================================================================
+   Chloe Hart site — paste ALL of this into
+   Appearance > Customize > Additional CSS, then click Publish.
+   It powers the stacked book cards, the backgrounds that stay still
+   while you scroll, the moving text strips and the cover fan.
+   ===================================================================== */
+:root{--ch-head:76px;--ch-ink:#140d13;--ch-rose:#e8a3b3;--ch-rose2:#d9708d;--ch-blush:#f7dfe3;--ch-wine:#5a2140;--ch-gold:#e7c36b;--ch-line:rgba(255,228,236,.16)}
+@media (max-width:767px){:root{--ch-head:66px}}
+body{background:var(--ch-ink)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--ch-head) + 12px)}
+.site-main,.page-content,.elementor{overflow:visible}
+.elementor-heading-title em{font-style:italic;color:var(--ch-rose)}
+.ch-dot{color:var(--ch-rose2)}
+.ch-logo-hart{color:var(--ch-rose);font-style:italic}
+.ch-logo .elementor-heading-title a{color:inherit}
+.ch-logo .elementor-heading-title{white-space:nowrap}
+
+/* ---------- header (sticky) ---------- */
+body #masthead{position:sticky!important;top:0;z-index:50}
+.ch-header{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);overflow-x:clip}
+.ch-nav{min-width:0;flex:1 1 0%!important}
+.ch-nav .hfe-nav-menu__toggle{margin-left:auto!important;margin-right:0!important}
+.ch-nav .hfe-nav-menu-icon svg{fill:#fff4ee}
+.ch-nav .hfe-nav-menu__toggle{border:1px solid var(--ch-line);border-radius:50%;width:46px;height:46px;justify-content:center}
+
+/* ---------- moving text strips ---------- */
+.ch-strip,.ch-band{overflow:hidden;white-space:nowrap}
+.ch-track{display:inline-flex;gap:28px;animation:ch-marquee 38s linear infinite}
+.ch-strip{background:var(--ch-rose2);color:#fff;font:700 12px/1 'DM Sans',sans-serif;letter-spacing:.18em;text-transform:uppercase}
+.ch-strip .ch-track{padding:11px 0}
+.ch-strip a{color:#fff;text-decoration:none}
+.ch-band{background:var(--ch-blush);color:var(--ch-wine);border-block:1px solid rgba(90,33,64,.2)}
+.ch-band .ch-track{font:italic 400 26px/1 'DM Serif Display',serif;padding:18px 0;gap:34px;animation-duration:46s}
+@keyframes ch-marquee{to{transform:translateX(-50%)}}
+
+/* ---------- hero ---------- */
+.ch-hero{overflow:hidden;background:radial-gradient(80% 90% at 78% 40%,rgba(217,112,141,.30),transparent 60%),radial-gradient(60% 70% at 10% 100%,rgba(15,42,34,.9),transparent 70%),var(--ch-ink)!important}
+.ch-ctas .elementor-button{min-height:52px}
+.ch-fan{position:relative;min-height:clamp(420px,46vw,600px)}
+.ch-fan .ch-cover{position:absolute!important;width:clamp(170px,18.5vw,260px)!important;margin:0!important;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.ch-fan .ch-cover img{width:100%;aspect-ratio:313/500;object-fit:cover;border-radius:6px;box-shadow:0 30px 60px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.06)}
+.ch-fan .ch-c1{left:2%;top:14%;transform:rotate(-9deg)}
+.ch-fan .ch-c2{left:50%;top:2%;margin-left:calc(clamp(170px,18.5vw,260px) / -2)!important;z-index:2}
+.ch-fan .ch-c3{right:2%;top:16%;transform:rotate(9deg)}
+.ch-fan:hover .ch-c1{transform:rotate(-12deg) translateX(-14px)}
+.ch-fan:hover .ch-c3{transform:rotate(12deg) translateX(14px)}
+.ch-newtag{position:absolute!important;z-index:3;left:calc(50% - 60px);top:-2%;width:auto!important;background:var(--ch-gold);padding:9px 13px;border-radius:999px;transform:rotate(-4deg)}
+.ch-sticker{position:absolute!important;z-index:3;display:grid!important;place-items:center;border-radius:50%;background:var(--ch-blush);transform:rotate(-12deg);box-shadow:0 14px 30px rgba(0,0,0,.35)}
+.ch-sticker-hero{right:2%;bottom:6%;width:146px!important;height:146px;padding:14px}
+@media (max-width:767px){
+  .ch-fan{min-height:min(110vw,440px)}
+  .ch-fan .ch-cover{width:44%!important}
+  .ch-fan .ch-c1{left:0;top:14%}
+  .ch-fan .ch-c2{margin-left:-22%!important;top:4%}
+  .ch-fan .ch-c3{right:0;top:16%}
+  .ch-newtag{left:calc(50% - 56px);top:0}
+  .ch-sticker-hero{width:124px!important;height:124px;padding:10px;bottom:0}
+}
+
+/* ---------- backgrounds that stay still while the page scrolls (works on iPhone too) ---------- */
+.ch-pinned{position:relative;clip-path:inset(0);isolation:isolate}
+.ch-pinned::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none}
+.ch-bg-turf::after{background:linear-gradient(rgba(10,26,21,.55),rgba(10,26,21,.55)),repeating-linear-gradient(90deg,rgba(255,255,255,.035) 0 90px,transparent 90px 180px),radial-gradient(70% 90% at 50% 40%,#16382d,#0f2a22)}
+.ch-bg-check::after{background-color:#2a1424;background-image:linear-gradient(45deg,rgba(232,163,179,.10) 25%,transparent 25%,transparent 75%,rgba(232,163,179,.10) 75%),linear-gradient(45deg,rgba(232,163,179,.10) 25%,transparent 25%,transparent 75%,rgba(232,163,179,.10) 75%);background-size:96px 96px;background-position:0 0,48px 48px}
+.ch-bg-hearts::after{background-color:var(--ch-rose2);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpath d='M30 44c-6-9-20-6-20 5 0 9 11 16 20 23 9-7 20-14 20-23 0-11-14-14-20-5z' fill='none' stroke='%23ffffff' stroke-opacity='.18' stroke-width='2'/%3E%3Cpath d='M90 98l3 8 8 3-8 3-3 8-3-8-8-3 8-3z' fill='%23ffffff' fill-opacity='.2'/%3E%3C/svg%3E")}
+
+/* ---------- new release cover ---------- */
+.ch-cover-lg{width:min(380px,100%)!important;margin-inline:auto}
+.ch-cover-lg img{width:100%;aspect-ratio:313/500;object-fit:cover;border-radius:8px;transform:rotate(-3deg);box-shadow:0 40px 80px rgba(0,0,0,.6),0 0 0 8px rgba(255,255,255,.05)}
+
+/* ---------- trope chips ---------- */
+.ch-chip{display:inline-block;margin:0 8px 8px 0;font:700 11.5px/1 'DM Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase;padding:9px 13px;border-radius:999px;border:1px solid var(--ch-line);color:var(--ch-blush);background:rgba(255,255,255,.04)}
+
+/* ---------- series: pinned heading + stacking cards ---------- */
+.ch-sticky{position:sticky!important;top:calc(var(--ch-head) + 48px);align-self:flex-start}
+.ch-order a{display:flex;align-items:center;gap:14px;margin:0 0 10px;color:var(--ch-blush);text-decoration:none;font-weight:500}
+.ch-order a span{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;border:1px solid var(--ch-line);font:400 18px/1 'Bebas Neue',sans-serif;color:var(--ch-rose)}
+.ch-order a:hover{color:var(--ch-rose)}
+.ch-card{position:sticky!important;top:calc(var(--ch-head) + 28px + var(--ch-i,0) * 26px);border:1px solid rgba(255,255,255,.1);box-shadow:0 -10px 50px rgba(0,0,0,.45);transform-origin:50% 0;will-change:transform}
+.ch-i1{--ch-i:1}.ch-i2{--ch-i:2}
+.ch-k1{background:linear-gradient(150deg,#6b2347,#3c1529 70%)!important}
+.ch-k2{background:linear-gradient(150deg,#4c2a72,#24163a 70%)!important}
+.ch-k3{background:linear-gradient(150deg,#174636,#0d2720 70%)!important}
+.ch-card-cover{width:clamp(150px,15vw,210px)!important;flex:none!important}
+.ch-card-body{min-width:0;flex:1 1 0%!important}
+.ch-card-cover img{width:100%;aspect-ratio:313/500;object-fit:cover;border-radius:6px;box-shadow:0 20px 40px rgba(0,0,0,.5)}
+.ch-tag{position:absolute!important;right:22px;top:-16px;width:auto!important;z-index:2;background:var(--ch-blush);padding:10px 14px;border-radius:999px;transform:rotate(4deg);box-shadow:0 8px 18px rgba(0,0,0,.3)}
+@media (max-width:1024px){.ch-sticky{position:static!important}}
+@media (max-width:767px){
+  .ch-card{display:grid!important;grid-template-columns:96px 1fr;column-gap:16px;row-gap:0;top:calc(var(--ch-head) + 12px + var(--ch-i,0) * 16px)}
+  .ch-card-body{display:contents!important}
+  .ch-card-cover{width:96px!important;grid-row:1 / span 3;align-self:start}
+  .ch-card-body>.elementor-element:nth-child(-n+3){grid-column:2}
+  .ch-card-body>.elementor-element:nth-child(n+4){grid-column:1 / -1}
+  .ch-card-body>.elementor-element:nth-child(4){margin-top:16px}
+  .ch-tag{right:16px}
+}
+
+/* ---------- about ---------- */
+.ch-photo{position:relative}
+.ch-arch img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:999px 999px 24px 24px}
+.ch-sticker-about{right:-14px;bottom:24px;width:118px!important;height:118px;padding:12px}
+@media (max-width:1024px){.ch-photo{max-width:420px;margin:0 auto}}
+@media (max-width:767px){.ch-sticker-about{right:0;width:104px!important;height:104px}}
+
+/* ---------- where to next: stacking tiles ---------- */
+.ch-tile{position:sticky!important;top:calc(var(--ch-head) + 40px + var(--ch-i,0) * 70px);text-decoration:none;box-shadow:0 -12px 40px rgba(0,0,0,.35);transition:transform .25s}
+.ch-tile:hover{transform:translateY(-4px)}
+.ch-t1{background:#e8a3b3!important;color:#3b1028}
+.ch-t2{background:#b99be6!important;color:#24113f}
+.ch-t3{background:#9fd3bd!important;color:#0d2a20}
+.ch-tile .elementor-heading-title{color:inherit}
+.ch-tile>.e-con:first-child .elementor-element:last-child .elementor-heading-title{opacity:.85}
+.ch-go{align-self:flex-start;width:auto!important;background:rgba(255,255,255,.9);padding:13px 18px;border-radius:999px}
+@media (max-width:767px){.ch-tile{top:calc(var(--ch-head) + 20px + var(--ch-i,0) * 56px)}}
+
+/* ---------- newsletter (styles the placeholder form AND the MailerLite embed) ---------- */
+.ch-news-form{display:grid;grid-template-columns:1fr 1.3fr auto;gap:10px;max-width:660px;margin:0 auto}
+.ch-news-form input,.ch-news-embed .ml-form-embedContainer input[type=text],.ch-news-embed .ml-form-embedContainer input[type=email]{min-height:54px;border:1.5px solid #e2c7cf!important;border-radius:999px!important;padding:0 22px!important;font:500 16px 'DM Sans',sans-serif!important;color:#2a0f20!important;background:#fff!important}
+.ch-news-form button,.ch-news-embed .ml-form-embedContainer button.primary{min-height:54px;border:0!important;border-radius:999px!important;padding:0 26px!important;background:var(--ch-rose2)!important;color:#fff!important;font:700 14px 'DM Sans',sans-serif!important;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;cursor:pointer}
+.ch-news-embed .ml-form-embedWrapper{background:transparent!important;max-width:660px!important;margin:0 auto!important}
+@media (max-width:767px){.ch-news-form{grid-template-columns:1fr}}
+
+/* ---------- instagram grid ---------- */
+.ch-ig img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px;transition:transform .5s}
+.ch-ig{overflow:hidden;border-radius:14px}
+.ch-ig:hover img{transform:scale(1.06)}
+.ch-ig-0 img{object-position:50% 20%}.ch-ig-1 img{object-position:50% 85%}.ch-ig-2 img{object-position:50% 15%}
+.ch-ig-3 img{object-position:50% 90%}.ch-ig-4 img{object-position:50% 15%}.ch-ig-5 img{object-position:50% 85%}
+
+/* ---------- footer ---------- */
+.ch-footer .elementor-icon-list-text{transition:color .2s}
+.ch-legal a{color:inherit}
+@media (max-width:767px){.ch-foot-brand{grid-column:1 / -1}}
+
+.ch-js{display:none}
+@media (prefers-reduced-motion:reduce){.ch-track{animation:none}.ch-fan .ch-cover,.ch-tile{transition:none}}
