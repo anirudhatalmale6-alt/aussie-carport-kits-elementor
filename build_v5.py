@@ -297,9 +297,13 @@ topbar = section([
 
 # ================================================================ 1. HERO
 header = section([
-    adv(heading('Patio <span style="color:#12A7E2">Experts</span>', color=WHITE,
-                link="#top", size=28, size_m=24, weight=900, lh=1.1, ls="-0.055em",
-                family=HEAD_F), grow=True),
+    adv(widget("image",
+               image={"url": f"{IMG_BASE}/pe-logo.webp", "id": "", "source": "library",
+                      "alt": "Patio Experts"},
+               image_size="full", width=sl(150), width_mobile=sl(118), align="left",
+               link_to="custom",
+               link={"url": "#top", "is_external": "", "nofollow": "",
+                     "custom_attributes": ""}), grow=True),
     heading(PHONE, color=WHITE, link=TEL, size=16, size_m=14, weight=900, lh=1.2),
     adv(button("Request a Quote", "#quote", "primary", full_m=False), hide_m=True),
 ], pad=(17, 17), pad_m=(17, 17), row=True,
