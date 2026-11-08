@@ -114,12 +114,20 @@ body #masthead{position:sticky!important;top:0;z-index:50}
 .ch-go{align-self:flex-start;width:auto!important;background:rgba(255,255,255,.9);padding:13px 18px;border-radius:999px}
 @media (max-width:767px){.ch-tile{top:calc(var(--ch-head) + 20px + var(--ch-i,0) * 56px)}}
 
-/* ---------- newsletter (styles the placeholder form AND the MailerLite embed) ---------- */
-.ch-news-form{display:grid;grid-template-columns:1fr 1.3fr auto;gap:10px;max-width:660px;margin:0 auto}
-.ch-news-form input,.ch-news-embed .ml-form-embedContainer input[type=text],.ch-news-embed .ml-form-embedContainer input[type=email]{min-height:54px;border:1.5px solid #e2c7cf!important;border-radius:999px!important;padding:0 22px!important;font:500 16px 'DM Sans',sans-serif!important;color:#2a0f20!important;background:#fff!important}
-.ch-news-form button,.ch-news-embed .ml-form-embedContainer button.primary{min-height:54px;border:0!important;border-radius:999px!important;padding:0 26px!important;background:var(--ch-rose2)!important;color:#fff!important;font:700 14px 'DM Sans',sans-serif!important;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;cursor:pointer}
-.ch-news-embed .ml-form-embedWrapper{background:transparent!important;max-width:660px!important;margin:0 auto!important}
-@media (max-width:767px){.ch-news-form{grid-template-columns:1fr}}
+/* ---------- newsletter: styles the MailerLite form to match the pink card ---------- */
+#list#list .ml-form-embedContainer .ml-form-embedWrapper{background:transparent!important;max-width:660px!important;width:100%!important;margin:0 auto!important;border:0!important;box-shadow:none!important}
+#list#list .ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody{padding:0!important}
+#list#list .ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent{display:none!important}
+#list#list .ml-form-embedContainer .ml-form-embedWrapper .ml-block-form{display:flex!important;flex-wrap:wrap;gap:10px}
+#list#list .ml-form-embedContainer .ml-form-embedWrapper .ml-block-form .ml-form-formContent{flex:1 1 260px;margin:0!important;padding:0!important}
+#list#list .ml-form-embedContainer .ml-form-embedWrapper .ml-block-form .ml-form-fieldRow{margin:0!important}
+#list#list .ml-form-embedContainer .ml-form-embedWrapper .ml-block-form .ml-form-fieldRow input{height:auto!important;min-height:54px!important;border:1.5px solid #e2c7cf!important;border-radius:999px!important;padding:0 22px!important;font:500 16px 'DM Sans',sans-serif!important;color:#2a0f20!important;background:#fff!important}
+#list#list .ml-form-embedContainer .ml-form-embedWrapper .ml-block-form .ml-form-embedSubmit{flex:0 0 auto;margin:0!important;width:auto!important}
+#list#list .ml-form-embedContainer .ml-form-embedWrapper .ml-block-form .ml-form-embedSubmit button{width:100%!important;min-height:54px!important;height:auto!important;border:0!important;border-radius:999px!important;padding:0 28px!important;background:#d9708d!important;color:#fff!important;font:700 14px 'DM Sans',sans-serif!important;letter-spacing:.08em!important;text-transform:uppercase!important;cursor:pointer}
+#list#list .ml-form-embedContainer .ml-form-embedWrapper .ml-block-form .ml-form-embedSubmit button.primary:hover{background:#c85a79!important}
+#list#list .ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4{color:#2a0f20!important;font:400 34px/1.1 'DM Serif Display',serif!important;text-align:center!important}
+#list#list .ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p{color:#6d4a5b!important;font:400 16px/1.6 'DM Sans',sans-serif!important;text-align:center!important}
+@media (max-width:767px){#list#list .ml-form-embedContainer .ml-form-embedWrapper .ml-block-form .ml-form-embedSubmit{flex:1 1 100%}}
 
 /* ---------- instagram grid ---------- */
 .ch-ig img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px;transition:transform .5s}

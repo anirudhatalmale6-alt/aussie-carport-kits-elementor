@@ -3696,7 +3696,7 @@
     "flex_direction": "column",
     "flex_direction_tablet": "column",
     "flex_direction_mobile": "column",
-    "flex_align_items": "stretch",
+    "flex_align_items": "center",
     "flex_gap": {
      "unit": "px",
      "size": 40,
@@ -3752,14 +3752,6 @@
        "unit": "%",
        "size": 100,
        "sizes": []
-      },
-      "margin": {
-       "unit": "px",
-       "top": "0",
-       "right": "auto",
-       "bottom": "0",
-       "left": "auto",
-       "isLinked": false
       },
       "padding": {
        "unit": "px",
@@ -3921,11 +3913,11 @@
        "id": "0500062",
        "elType": "widget",
        "settings": {
-        "html": "<!-- NEWSLETTER: replace everything inside this box with the MailerLite embed code -->\n<form class=\"ch-news-form\" onsubmit=\"return false\">\n  <input type=\"text\" name=\"first_name\" placeholder=\"First name\" aria-label=\"First name\">\n  <input type=\"email\" name=\"email\" placeholder=\"Email address\" aria-label=\"Email address\" required>\n  <button type=\"submit\">Count me in</button>\n</form>",
+        "html": "<!-- MailerLite Universal -->\n<script>\n    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])\n    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,\n    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})\n    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');\n    ml('account', '2775791');\n</script>\n<!-- End MailerLite Universal -->\n<div class=\"ml-embedded\" data-form=\"CrgYKj\"></div>",
         "_css_classes": "ch-news-embed",
         "_margin": {
          "unit": "px",
-         "top": "30",
+         "top": "26",
          "right": "0",
          "bottom": "0",
          "left": "0",

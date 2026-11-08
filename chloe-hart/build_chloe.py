@@ -290,12 +290,16 @@ nextsec = sec([
         width="50%", gap_px=24, classes=("ch-tiles",)),
 ], row=True, align="flex-start", pad=(130, 130), pad_m=(80, 80), gap_px=90, gap_t=30)
 
-FORM = """<!-- NEWSLETTER: replace everything inside this box with the MailerLite embed code -->
-<form class="ch-news-form" onsubmit="return false">
-  <input type="text" name="first_name" placeholder="First name" aria-label="First name">
-  <input type="email" name="email" placeholder="Email address" aria-label="Email address" required>
-  <button type="submit">Count me in</button>
-</form>"""
+FORM = """<!-- MailerLite Universal -->
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2775791');
+</script>
+<!-- End MailerLite Universal -->
+<div class="ml-embedded" data-form="CrgYKj"></div>"""
 
 news = sec([
     con([eyebrow("Your invitation to the dark side", color=ROSE2, mb=16, align="center"),
@@ -304,14 +308,15 @@ news = sec([
          tx("<p>First dibs on new releases, cover reveals, exclusive extras and all the chaos "
             "behind the pages. No boring emails. Promise.</p>", color="#6D4A5B", size=17,
             align="center"),
-         adv(cls(html(FORM), "ch-news-embed"), mt=30)],
+         adv(cls(html(FORM), "ch-news-embed"), mt=26)],
         flex_direction="column", flex_align_items="stretch",
         width=cu("min(820px, 100%)"), width_tablet=cu("min(820px, 100%)"),
-        width_mobile=sl(100, "%"), margin=dim(0, "auto", 0, "auto"),
+        width_mobile=sl(100, "%"),
         padding=dim(64, 64, 64, 64), padding_mobile=dim(32, 22, 32, 22),
         background_background="classic", background_color=CREAM, border_radius=rad(30),
         **shadow("box_shadow", 0, 40, 90, 0, "rgba(60,10,30,0.35)")),
-], ident="list", classes=("ch-pinned", "ch-bg-hearts"), pad=(140, 140), pad_m=(80, 80))
+], ident="list", classes=("ch-pinned", "ch-bg-hearts"), pad=(140, 140), pad_m=(80, 80),
+   flex_align_items="center")
 
 IG_TILES = [("chloe-book1.webp", "50% 20%"), ("chloe-book2.webp", "50% 85%"),
             ("chloe-book3.webp", "50% 15%"), ("chloe-book1.webp", "50% 90%"),
